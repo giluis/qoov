@@ -1,0 +1,19 @@
+body{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header.options {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
