@@ -5,43 +5,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qoov</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="brand">
-            Qoov
-        </div>
-
-        <div class="options">
-            <div class="idioms">
-                <img id="portugalicon" src="..." alt="portuguese idiom">
-                Portugal (PT)
+    <main>
+        <header>
+            <img src="assets/logo_header.png" alt="Welcome to Qoov" class="brand">
             </div>
-            <div class="signin">
-                Iniciar Sessão
+
+            <div class="options">
+                <div class="idioms">
+                    <img id="portugalicon" src="assets/portugal_icon.png" alt="portuguese idiom">
+                    <div class="idiomname">
+                        Portugal (PT)
+                    </div>
+                </div>
+                <button class="simplebutton signin">
+                    Iniciar Sessão
             </div>
+            </div>
+
+        </header>
+
+        <section id="landing">
+            <div class="promotion">
+                14 DIAS GRÁTIS
+            </div>
+            <div class="title">
+                Simplifique a gestão da sua frota TVDE
+            </div>
+            <div class="subtitle">
+                <!-- todas / todas as suas?  -->
+                Agrupe todas as plataformas e torne tudo muito mais simples
+            </div>
+            <div class="email_and_submit">
+                <input type="email" name="submit_email" class="landingemail" placeholder="Endereço de Email">
+                <button class="bigbutton">
+                    <span class="comecar"> Começar </span>
+                    <img src="assets/seta_direita.png" alt="right arrow">
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="detalhes_plataforma">
+        <div class="detalhes_container">
+            <div class="detalhes">
+                <div class="sectionheader">
+                    Plataforma Unificada
+                </div>
+                <div class="sectiontitle">
+                    Uma plataforma totalmente integrada
+                </div>
+                <div class="sectiontext">
+                    <span class="brand_mentioned">QOOV</span> é um software de controlo de fortas TVDE que permite fazer
+                    a sua gestão de forma totalmente integrada.
+                    Nós juntamos, num único lugar, tudo aquilo que necessita para gerir a sua frota da melhor maneira.
+                </div>
+                <button class="bigbutton">Comece a gerir a sua frota com a QOOV</button>
+            </div>
+            <img src="assets/imagem_iniciar_sessao.png" alt="login images">
         </div>
 
-    </header>
+        <div class="actionitemlist">
+            <div class="actionitem">
+                <img src="assets/target_item.png" alt="target item">
+                <div class="actioniteminfo">
+                    <div class="itemtitle">Centralizar o seu negócio</div>
+                    <div class="itemtext">
+                        Todas as plataformas (Uber, Bolt, Via Verde e mais) reunidas num único lugar
+                    </div>
+                </div>
+            </div>
 
-    <section id="landing">
-        <div class="promotion">
-            14 dias grátis
-        </div>
-        <div class="title">
-            Simplifique a gestão da sua frota TVDE
-        </div>
-        <div class="subtitle">
-            Agrupe todas as suas plataformas e torne tudo muito mais simples
-        </div>
-        <div class="email_and_submit">
-            <input type="email" name="Endereço de e-mail" id="landingemail">
-            <button>Começar</button>
+            <div class="actionitem">
+                <img src="assets/calculator_item.png" alt="calculator item">
+                <div class="actioniteminfo">
+                    <div class="itemtitle">Calcular instantaneamente o seu lucro</div>
+                    <div class="itemtext">Insira todas as suas despesas (manutençoes, leasing/renting, combustível e
+                        mais)</div>
+                </div>
+            </div>
+
+
+            <div class="actionitem">
+                <img src="assets/euro_item.png" alt="euro item">
+                <div class="actioniteminfo">
+                    <div class="itemtitle">Faturação geral</div>
+                    <div class="itemtext">Agrupe a faturação de ambas as plataformas (Uber e Bolt) e controle tudo
+                        simultaneamente</div>
+                </div>
+            </div>
+
+            <div class="actionitem">
+                <img src="assets/file_plus_item.png" alt="file item with a plus">
+                <div class="actioniteminfo">
+                    <div class="itemtitle">Apurar o vencimento dos seus motoristas</div>
+                    <div class="itemtext">Saiba o que pagar ao seu motorista para qualquer intervalo de tempo</div>
+                </div>
+            </div>
+
+
+            <div class="actionitem">
+                <img src="assets/star_item.png" alt="star item">
+                <div class="actioniteminfo">
+                    <div class="itemtitle">Comparar os seus motoristas</div>
+                    <div class="itemtext">Compare os ganhos e os gastos dos seus motoristas</div>
+                </div>
+            </div>
+
+
+            <div class="actionitem">
+                <img src="assets/chat_bubble_item.png" alt="chat bubble item">
+                <div class="actioniteminfo">
+                    <div class="itemtitle">Comunicar diretamente com os seus motoristas</div>
+                    <div class="itemtext">Envie relatórios para os seus motoritsas de forma instantânea</div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+
+    <section class="company_stats">
+        <div class="statheader">
+            <div class="stattitle">
+                Dedique o seu tempo ao que realmente importa
+            </div>
+            <div class="statsubtitle">
+                Com a <span class="highlight_brand">QOOV</span> deixa de perder tempo com os morosos processos de
+                control da sua frota
+            </div>
+        </div>
+
+        <div class="statsrow">
+            <div class="stats">
+                <div class="statnumber">
+                    25 <span class="smaller">mil</span>
+                </div>
+                <div class="statcaption">
+                    motoristas são controlados diariamente na <span class="highlight_brand">QOOV</span>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="statnumber">
+                    5 <span class="smaller">mil</span>
+                </div>
+                <div class="statcaption">
+                    frotas estão registadas na <span class="highlight_brand">QOOV</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="opinions">
+            <div class="mainopinion">
+                <h1 class="opiniontitle">Empresa XPTO</h1>
+                <p class="opiniontext">
+“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo laoreet sit amet cursus..”
+                </p>
+                <div class="opinionauthor">
+                    <img src="FM_profile" alt="">
+                    <h2>
+                        Francisco Martins
+                    </h2>
+                </div>
+            </div>
+            <div class="opinion2">
+
+            </div>
+            <div class="opinion3"></div>
+        </div>
+    </section>
+
+
+
+    <section class="morethings">
+        hello there
+    </section>
 
 
 
