@@ -45,7 +45,7 @@ header>.options>.idioms {
     border: none;
     width: 150px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 0.9em;
     text-align: center;
     padding: 5px 0px;
 }
@@ -73,7 +73,7 @@ header>.options>.idioms {
     height: 30px;
     border-radius: 18px;
     padding-left: 15px;
-    font-size: 13px;
+    font-size: 0.8em;
     border: none;
     color: #dddddd;
     margin: auto 0px;
@@ -90,19 +90,30 @@ header>.options>.idioms {
     width: 200px;
     height: 55px;
     border-radius: 58px;
-    font-size: 19px;
+    font-size: 1.3em;
     text-align: center;
     border: none;
     color: white;
     box-shadow: 0 6px 6px #999;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-style: normal;
+    text-decoration: none;
 }
 
-.email_and_submit>.bigbutton {}
+.bigbutton-animated:hover {
+    transform: scaleY(0.8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+.bigbutton-animated:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 .bigbutton>span {
     padding-left: 10px;
 }
-
 
 #portugalicon {
     width: auto;
@@ -123,6 +134,7 @@ header>.options>.idioms {
 
 #landing {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     background-image: url("./assets/background_grid.png");
@@ -133,15 +145,15 @@ header>.options>.idioms {
 #landing>.promotion {
     font-weight: 700;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 18px;
+    font-size: 1.3em;
     color: #dd2179;
     margin-bottom: 40px;
     margin-top: 80px;
 }
 
 #landing>.title {
-    font-size: 60px;
-    width: 738px;
+    font-size: 3.4em;
+    width: 60%;
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -154,7 +166,7 @@ header>.options>.idioms {
     color: #777777;
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.6em;
     margin-bottom: 30px;
 }
 
@@ -196,14 +208,14 @@ header>.options>.idioms {
 .sectionheader {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.2em;
     color: #DA2077;
     margin-bottom: 20px;
 }
 
 .sectiontitle {
     font-family: 'Montserrat';
-    font-size: 38px;
+    font-size: 2.3em;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -215,7 +227,7 @@ header>.options>.idioms {
 
 .sectiontext {
     color: #3B3B3B;
-    font-size: 21px;
+    font-size: 1.4em;
     font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     line-height: 32px;
 }
@@ -729,8 +741,14 @@ section.ambiente>.bigbutton {
     align-items: center;
     padding: 0 90px;
     margin-top: 90px;
+    max-width: 600px;
+    margin: 90px auto;
 }
 
+.questions {
+    display: grid;
+    row-gap: 8px;
+}
 
 .question_container {
     display: flex;
@@ -739,3 +757,29 @@ section.ambiente>.bigbutton {
     font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+.question_container > .bigbutton {
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+.question_container > div:nth-of-type(2){
+    opacity: 1;
+    color: white;
+    height: 0;
+    transition: height 0.25s ease-in;
+}
+
+.question_container.selected > div:nth-of-type(2){
+    display: box;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #e58eb7;
+    color: white;
+    border-radius: 25px;
+    padding: 18px;
+    height: auto;
+}

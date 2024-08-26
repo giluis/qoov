@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoov</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="assets/logo_header.png" alt="Welcome to Qoov" class="brand">
+            <div class="options">
+                <div class="idioms">
+                    <img id="portugalicon" src="assets/portugal_icon.png" alt="portuguese idiom">
+                    <div class="idiomname">
+                        Portugal (PT)
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <section id="signinlanding">
+            <div class="signin_container">
+                <div class="title">
+                    Iniciar Sessão
+                </div>
+
+                <div class="form">
+                    <div class="form_question">
+                        <input type="input" class="formField" placeholder="Name" name="name" id='name' required />
+                        <label for="name" class="formLabel">Email ou Número de Telemóvel</label>
+                    </div>
+
+                    <div class="form_question">
+                        <input type="input" class="formField" placeholder="Name" name="password" id='password'
+                            required />
+                        <label for="password" class="formLabel">Password</label>
+                    </div>
+                </div>
+
+                <div class="bottom_options">
+                    <input type="checkbox" class="remember" name="remember" />
+                    <label for="remember" class="formLabel">Lembrar os meus dados</label>
+                    <a href="./ajuda.html">Precisa de ajuda?</a>
+                </div>
+
+<button class="bigbutton" onclick="window.location.href='./sessao_iniciada.html'">Iniciar Sessão</button>
+
+                <p class="registar">É o seu primeiro acesso à QOOV? <span class="highlight_brand">Registe-se agora</span></p>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+
+
+</html>

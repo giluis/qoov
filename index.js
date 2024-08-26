@@ -13,7 +13,24 @@
     updateValue(slider.value, result)
 
     setFAQs()
+
+
 })()
+
+function setFAQs() {
+    for (const e of document.querySelectorAll(".question_container")) {
+        e.addEventListener("click", _ => {
+            collapseFAQs()
+            e.classList.add("selected")
+        })
+    }
+}
+
+function collapseFAQs() {
+    for (const e of document.querySelectorAll(".question_container")) {
+        e.classList.remove("selected")
+    }
+}
 
 function buildResult(text) {
     const result = {}
@@ -33,20 +50,20 @@ function buildResult(text) {
     return result;
 }
 
-function updateValue(value, result){
-        let num_motoristas = value;
-        let discount = document.querySelector(".discount");
-        let precoBase = document.querySelector(".precoBase");
-        discount.textContent ="-" + result[value].discount;
-        precoBase.textContent = result[value].precoBase + "€";
-        if(result[num_motoristas].precoBase === result[1].precoBase  ) {
-            discount.style.opacity = 0;
-            document.querySelector(".previous_price").style.display = "none";
-        } else {
-            discount.style.opacity = 1
-            document.querySelector(".previous_price").style.display = "block";
-        }
-        document.querySelector(".num_motoristas_display").textContent = value;
+function updateValue(value, result) {
+    let num_motoristas = value;
+    let discount = document.querySelector(".discount");
+    let precoBase = document.querySelector(".precoBase");
+    discount.textContent = "-" + result[value].discount;
+    precoBase.textContent = result[value].precoBase + "€";
+    if (result[num_motoristas].precoBase === result[1].precoBase) {
+        discount.style.opacity = 0;
+        document.querySelector(".previous_price").style.display = "none";
+    } else {
+        discount.style.opacity = 1
+        document.querySelector(".previous_price").style.display = "block";
+    }
+    document.querySelector(".num_motoristas_display").textContent = value;
 
 }
 

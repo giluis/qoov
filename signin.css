@@ -1,0 +1,226 @@
+#signinlanding {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/background_grid.png");
+    background-size: cover;
+}
+
+.signin_container {
+    display: flex;
+    max-width: 300px;
+    border-radius: 9px;
+    margin: 0 auto;
+    background-color: #E2E2E2C6;
+    opacity: 0.9;
+    position: relative;
+    padding: 20px;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    top: 10vh;
+    flex-direction: column;
+}
+
+.signin_container>.title {
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0 40px 0;
+}
+
+.formField {
+    font-family: inherit;
+    padding: 3px;
+    padding-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: none
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+.formLabel {
+    position: absolute;
+    font-family: inherit;
+    font-size: 0.8em;
+    padding-top: 5px;
+    left: 12px
+}
+
+.form_question {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.remember+label {
+    position: absolute;
+    left: 21px;
+    top: -5px;
+}
+
+.bottom_options>a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    font-size: 0.7em;
+    padding-top: 2px;
+}
+
+
+
+.bottom_options {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .formField {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid grey;
+    outline: 0;
+    color: white;
+    background: transparent;
+    transition: border-color 0.2s
+}
+
+.formField::placeholder {
+    color: transparent
+}
+
+.formField:placeholder-shown ~ .formLabel{
+    cursor: text;
+    top: 20px;
+}
+
+.formLabel {
+    position: absolute;
+    top: 0px;
+}
+
+form {
+    position: relative;
+} */
+
+main {
+    height: 100vh;
+    /* width: 100vw; */
+    padding: 27px 59px 0
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+header>.brand {}
+
+header>.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header>.options>.idioms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #dd2179;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.idiomname {
+    padding-top: 2px;
+    margin-left: -10px;
+}
+
+.bigbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DD2179;
+    border-radius: 58px;
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+    color: white;
+    box-shadow: 0 6px 6px #999;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-style: normal;
+    text-decoration: none;
+}
+
+.simplebutton {
+    background-color: #dd2179;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+}
+
+.signin_container>.bigbutton {
+    margin: 40px auto 0;
+    width: 55%;
+    background-color: #DD2179;
+    font-size: 1rem;
+    height: 30px;
+}
+
+header>.options>.idioms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    background-color: #dd2179;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    width: 150px;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.highlight_brand {
+    color: #DA2077;
+    font-weight: 600;
+}
+
+.registar {
+    font-size: 0.8em;
+    color: #555;
+}
