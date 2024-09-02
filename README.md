@@ -11,3 +11,11 @@
 - [ ] animações nas FAQs e nos botões
 - [ ] falta desenhar o que diz a estimativa de preço para 30+ motoristas
 - [ ] responsive for tablet and phone
+
+Mais pequeno
+- "agrup" 
+- 14 dias 
+- itens tamanho de titulo igual ao texto
+- ajustar distância pricing
+- circunferência branca na bolinha
+- quadradinho maior, percentagem maior, letra maior

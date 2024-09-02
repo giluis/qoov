@@ -1,0 +1,206 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro';
+    /* padding:0px 70px; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.sideindented {
+    margin: 0 150px;
+}
+
+/* Landing Page  */
+
+main {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+header>.brand {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 30px;
+}
+
+header>.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+}
+
+header>.options>.idioms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    background-color: #dd2179;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.idiomname {
+    padding-top: 2px;
+    margin-left: -10px;
+}
+
+
+#landing>.email_and_submit {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+
+#landing>.email_and_submit>.landingemail::placeholder {
+    color: white;
+}
+
+#landing>.email_and_submit>.landingemail {
+    background-color: #DD2179B9;
+    width: 300px;
+    height: 30px;
+    border-radius: 18px;
+    padding-left: 15px;
+    font-size: 0.8em;
+    border: none;
+    color: #dddddd;
+    margin: auto 0px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.bigbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DD2179;
+    width: 200px;
+    height: 55px;
+    border-radius: 58px;
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+    color: white;
+    box-shadow: 0 6px 6px #999;
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-style: normal;
+    text-decoration: none;
+}
+
+.bigbutton > span.comecar {
+    font-family: 'SF Pro Text Semibold';
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.bigbutton-animated:hover {
+    transform: scaleY(0.8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+.bigbutton-animated:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bigbutton>span {
+    padding-left: 10px;
+}
+
+#portugalicon {
+    width: auto;
+    height: auto;
+    padding-right: 5px;
+    max-width: 50px;
+    max-height: 50px;
+    text-align: center;
+}
+
+.simplebutton {
+    background-color: #dd2179;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    max-width: 150px;
+    font-size: 0.8em;
+    height: 1.4em;
+
+}
+
+#landing {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./assets/background_grid.png");
+    background-size: cover;
+    margin: 0px 0px;
+}
+
+#landing>.promotion {
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.0em;
+    color: #dd2179;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+#landing>.title {
+    font-size: 3.4em;
+    width: 60%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 30px;
+    text-shadow: 0 3px 3px #bbb;
+}
+
+#landing>.subtitle {
+    color: #777777;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+
+#landing>.input {
+    background-color: #DD2179B9;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('./SFProFonts/SFProFonts.pkg/Library/Fonts/SF-Pro-Display-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Semibold';
+    src: url('./SFProFonts/SFProFonts.pkg/Library/Fonts/SF-Pro-Text-Semibold.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
