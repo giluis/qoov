@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qoov</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./styles/build/styles.css">
     <!-- <link rel="stylesheet" href="./signin.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +21,12 @@
             <img src="assets/Logo_Blck.svg" alt="Welcome to Qoov" class="brand">
 
             <div class="options">
-                <div class="idioms">
+                <div class="idioms simplebutton">
                     <img id="portugalicon" src="assets/portugal_icon.png" alt="portuguese idiom">
                     <div class="idiomname">
                         Portugal (PT)
                     </div>
+                    <img src="./assets/seta_para_baixo.png" alt="seta virada para baixo">
                 </div>
                 <button class="simplebutton signin">
                     Iniciar Sessão
@@ -46,7 +47,7 @@
                 Agrupe todas as plataformas e torne tudo muito mais simples
             </div>
             <div class="email_and_submit">
-                <input type="email" name="submit_email" class="landingemail" placeholder="Endereço de Email">
+                <input type="email" name="submit_email" class="landingemail" placeholder="Endereço de e-mail">
                 <a href="./signin.html" class="bigbutton bigbutton-animated">
                     <span class="comecar"> Começar </span>
                     <img src="assets/seta_direita.png" alt="right arrow">
@@ -70,68 +71,14 @@
                     a sua gestão de forma totalmente integrada.
                     Nós juntamos, num único lugar, tudo aquilo que necessita para gerir a sua frota da melhor maneira.
                 </div>
-                <button class="bigbutton">Comece a gerir a sua frota com a QOOV</button>
+                <a href="./signin.html" class="bigbutton bigbutton-animated">
+                    Comece a gerir a sua frota com a QOOV
+                </a>
             </div>
-            <img src="assets/imagem_iniciar_sessao.png" alt="login images">
+            <img class="stackedlogin" src="assets/imagem_iniciar_sessao.png" alt="login images">
         </div>
 
-        <div class="actionitemlist">
-            <div class="actionitem">
-                <img src="assets/target_item.png" alt="target item">
-                <div class="actioniteminfo">
-                    <div class="itemtitle">Centralizar o seu negócio</div>
-                    <div class="itemtext">
-                        Todas as plataformas (Uber, Bolt, Via Verde e mais) reunidas num único lugar
-                    </div>
-                </div>
-            </div>
-
-            <div class="actionitem">
-                <img src="assets/calculator_item.png" alt="calculator item">
-                <div class="actioniteminfo">
-                    <div class="itemtitle">Calcular instantaneamente o seu lucro</div>
-                    <div class="itemtext">Insira todas as suas despesas (manutençoes, leasing/renting, combustível e
-                        mais)</div>
-                </div>
-            </div>
-
-
-            <div class="actionitem">
-                <img src="assets/euro_item.png" alt="euro item">
-                <div class="actioniteminfo">
-                    <div class="itemtitle">Faturação geral</div>
-                    <div class="itemtext">Agrupe a faturação de ambas as plataformas (Uber e Bolt) e controle tudo
-                        simultaneamente</div>
-                </div>
-            </div>
-
-            <div class="actionitem">
-                <img src="assets/file_plus_item.png" alt="file item with a plus">
-                <div class="actioniteminfo">
-                    <div class="itemtitle">Apurar o vencimento dos seus motoristas</div>
-                    <div class="itemtext">Saiba o que pagar ao seu motorista para qualquer intervalo de tempo</div>
-                </div>
-            </div>
-
-
-            <div class="actionitem">
-                <img src="assets/star_item.png" alt="star item">
-                <div class="actioniteminfo">
-                    <div class="itemtitle">Comparar os seus motoristas</div>
-                    <div class="itemtext">Compare os ganhos e os gastos dos seus motoristas</div>
-                </div>
-            </div>
-
-
-            <div class="actionitem">
-                <img src="assets/chat_bubble_item.png" alt="chat bubble item">
-                <div class="actioniteminfo">
-                    <div class="itemtitle">Comunicar diretamente com os seus motoristas</div>
-                    <div class="itemtext">Envie relatórios para os seus motoritsas de forma instantânea</div>
-                </div>
-            </div>
-
-        </div>
+        <div id="actionitemlist"></div>
     </section>
 
 
@@ -165,7 +112,11 @@
                 </div>
             </div>
 
+
         </div>
+        <footer>
+            Powered by Qoov
+        </footer>
         <div class="opinions">
             <div class="mainopinion">
                 <h1 class="opiniontitle">Empresa XPTO</h1>
@@ -182,20 +133,20 @@
                     </div>
                 </div>
             </div>
-            <div class="opinion2"></div>
-            <div class="opinion3"></div>
+            <div class="background_opinion left_opinion"></div>
+            <div class="background_opinion right_opinion"></div>
         </div>
     </section>
 
 
 
-    <section class="pricing">
+    <section class="pricing sideindented">
         <div class="detalhes">
             <div class="sectionheader">
                 Pricing
             </div>
             <div class="sectiontitle">
-                Uma <span class="highlight_brand"> única solução </span> para todas as empresas
+                Uma <span class="highlight_brand"> única solução </span> <br>para todas as empresas
             </div>
             <div class="sectiontext">
                 Na <span class="highlight_brand">QOOV</span> existe um plano adquado à gestão da sua frota. Analise
@@ -209,7 +160,8 @@
                 <div class="slider_container sectiontext">
                     <p>Quanto maior a frota, maior a poupança. Quantos <span class="highlight_brand">motoristas</span>
                         tem a sua frota?</p>
-                    <input min=1 max=30 type="range" value=7 name="num_motoristas" class="motoristas_slider">
+                    <!-- Value 212 is computed based on the mapping of [1:1000] -> [1:30] -->
+                    <input min=1 max=1000 type="range" value=212 name="num_motoristas" class="motoristas_slider">
                     <div class="labels">
                         <div><strong>1</strong> motorista</div>
                         <div><strong>+30</strong> motoristas</div>
@@ -249,7 +201,9 @@
             Todas as funcionalidades são disponibilizadas em ambiente computador, tablet e smartphone
             Assim consegue gerir a sua frota apartir de qualquer local</div>
 
-        <button class="bigbutton">Começar</button>
+        <a href="./signin.html" class="bigbutton bigbutton-animated">
+            Começar
+        </a>
 
     </section>
     <section class="expo_devices">
@@ -259,46 +213,69 @@
     </section>
 
 
-    <section id="faqs">
+    <section id="faqs" class="sideindented">
         <div class="sectiontitle">Perguntas Frequentes</div>
 
-        <div class="questions">
-            <div class="question_container selected">
-                <div class="bigbutton">
-                    O que é a QOOV?
+        <div class="question_container">
+            <div class="question_item">
+                <div class="title">
+                    <h3> O que é a QOOV? </h3>
+                    <span class="arrow">▼</span>
+
                 </div>
-                <div>
-                    A Qoov é um servico de software que oferece aos seus clientes a
-                    possibilidade de gerir a sua frota TVDE numa plataforma que reúne
-                    as maiores plataforma de ride hailing em Portugal
+                <div class="answer">
+                    <p>
+                        A Qoov é um servico de software que oferece aos seus clientes a
+                        possibilidade de gerir a sua frota TVDE numa plataforma que reúne
+                        as maiores plataforma de ride hailing em Portugal
+                    </p>
                 </div>
             </div>
 
-            <div class="question_container">
-                <div class="bigbutton">
-                    Quanto custa a QOOV
+            <div class="question_item">
+                <div class="title">
+                    <h3> Quanto custa a QOOV </h3>
+                    <span class="arrow">▼</span>
                 </div>
-                <div>A QOOV segue um plano de subscrição mensal por motorista gerido.
-                    O valor por motorista diminui quanto maior é a frota</div>
-            </div>
-
-            <div class="question_container">
-                <div class="bigbutton">
-                    O que posso fazer na QOOV
-                </div>
-                <div>
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
-                    laoreet sit amet cursus..”
+                <div class="answer">
+                    <p>
+                        A QOOV segue um plano de subscrição mensal por motorista gerido.
+                        O valor por motorista diminui quanto maior é a frota
+                    </p>
                 </div>
             </div>
 
-            <div class="question_container">
-                <div class="bigbutton">Como posso cancelar?</div>
-                <div>
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
-                    laoreet sit amet cursus..”
+            <div class="question_item">
+                <div class="title">
+                    <h3> O que posso fazer na QOOV </h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="answer">
+                    <p>
+
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
+                        laoreet sit amet cursus..”
+                    </p>
+                </div>
+            </div>
+
+            <div class="question_item">
+                <div class="title">
+                    <h3>
+                        Como posso cancelar?
+                    </h3>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="answer">
+                    <p>
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
+                        laoreet sit amet cursus..”
+
+                    </p>
                 </div>
             </div>
 
@@ -308,6 +285,11 @@
 
 
     </section>
+
+
+    <footer>
+
+    </footer>
 
 </body>
 

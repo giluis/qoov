@@ -1,0 +1,104 @@
+@import 'fonts.scss';
+
+.opinions {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    // this must be changed for responsive layouts
+    width: 830px;
+    height: 490px;
+    border-radius: 20px;
+    z-index: 1;
+    bottom: -370px;
+    left: calc(50vw - 415px);
+}
+
+.mainopinion {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 2fr 1fr;
+    width: 550px;
+    height: 380px;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 10;
+    color: black;
+    bottom: -320px;
+    left: calc(50vw - 260px);
+
+    padding: 15px 60px 20px 60px;
+    box-shadow: 0 3px 6px #ccc;
+
+    h1 {
+        align-self: left;
+        text-align: left;
+        font-family: $sfprotextsemi;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    p {
+        font-size: 1.4rem;
+        text-align: left;
+        font-family: $sfprodisplayregular;
+        margin: auto 0;
+    }
+
+    .opinionauthor {
+        display: flex;
+        height: 60px;
+        align-items: center;
+
+        .profile_pic {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+
+        .author_container {
+            margin-left: 15px;
+
+            .author_name {
+                text-align: left;
+            }
+
+            .author_role {
+                text-align: left;
+                font-size: smaller;
+            }
+
+        }
+
+    }
+
+
+}
+
+.background_opinion {
+    position: absolute;
+    display: flex;
+    width: 330px;
+    height: 290px;
+    z-index: 9;
+    top: 48px;
+    border-radius: 20px;
+    padding: 20px 60px;
+    background-color: white;
+    box-shadow: 0 3px 6px #ccc;
+
+    &.right_opinion {
+        left: calc(50vw - 260px - 20px);
+    }
+
+    &.left_opinion {
+        right: calc(50vw - 260px - 20px);
+    }
+}

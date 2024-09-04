@@ -1,0 +1,1245 @@
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+/* Main Page */
+main {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 20px 0;
+}
+header .brand {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 24px;
+}
+header .options {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  align-items: center;
+  font-size: 0.6em;
+  color: white;
+  height: 20px;
+}
+header .options .idioms {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  min-width: 35%;
+  background-color: #dd2179;
+  border-radius: 18px;
+  align-items: center;
+  margin-right: 10px;
+}
+header .options .idioms #portugalicon {
+  transform: scale(0.7, 0.7);
+}
+header .options .idioms img:nth-of-type(2) {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 20px;
+  transform: scale(0.8, 0.8);
+}
+header .options .simplebutton {
+  height: 100%;
+  font-size: 0.9em;
+  padding: 0 3px;
+}
+header .options .simplebutton.signin {
+  padding: 0 20px;
+}
+
+.simplebutton {
+  background-color: #dd2179;
+  border-radius: 18px;
+  color: white;
+  border: none;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/background_grid.png");
+  background-size: cover;
+}
+#landing .promotion {
+  font-family: "SF Pro Text Heavy";
+  font-size: 0.75em;
+  font-weight: 900;
+  color: #dd2179;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-shadow: 0px 2px 20px #bbb;
+}
+#landing .title {
+  font-size: 3.3em;
+  max-width: 60%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #303133;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 2px #bbb;
+}
+#landing .subtitle {
+  color: #777777;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.12em;
+  margin-bottom: 30px;
+  text-shadow: 0 6px 15px #aaa;
+  letter-spacing: -0.03em;
+}
+#landing .email_and_submit {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 40px;
+}
+#landing .email_and_submit input {
+  background-color: rgba(221, 33, 121, 0.7254901961);
+  width: 43%;
+  max-width: 400px;
+  height: 32px;
+  border-radius: 18px;
+  padding-left: 15px;
+  font-size: 0.8em;
+  border: none;
+  color: #dddddd;
+  margin: auto 0px;
+  margin-right: 50px;
+}
+#landing .email_and_submit input::placeholder {
+  color: white;
+  opacity: 0.7;
+  font-size: 1em;
+}
+#landing .email_and_submit .bigbutton {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  width: 105px;
+}
+#landing .email_and_submit .bigbutton span {
+  margin-left: 10px;
+  text-shadow: 0 3px 18px #d6d6d6;
+}
+#landing .email_and_submit .bigbutton img {
+  transform: scale(0.7, 0.7);
+  margin-right: 7px;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display Regular";
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.sideindented {
+  margin: 0 125px;
+}
+
+.sectionheader {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #DA2077;
+  margin-bottom: 15px;
+}
+
+.sectiontitle {
+  font-family: "Montserrat";
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sectiontext {
+  color: #3B3B3B;
+  font-size: 1.25em;
+  font-family: "SF Pro Text Light";
+  max-width: 510px;
+  letter-spacing: -1px;
+  line-height: 1.69;
+}
+
+.bigbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DD2179;
+  font-family: "SF Pro Display Regular";
+  font-weight: 200;
+  border-radius: 58px;
+  font-size: 1.3em;
+  border: none;
+  color: white;
+  box-shadow: 0 6px 20px #c5c5c5;
+  font-style: normal;
+  text-decoration: none;
+}
+.bigbutton:hover {
+  transform: scaleY(0.8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+.bigbutton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight_brand {
+  color: #DA2077;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display Regular";
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.sideindented {
+  margin: 0 125px;
+}
+
+.sectionheader {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #DA2077;
+  margin-bottom: 15px;
+}
+
+.sectiontitle {
+  font-family: "Montserrat";
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sectiontext {
+  color: #3B3B3B;
+  font-size: 1.25em;
+  font-family: "SF Pro Text Light";
+  max-width: 510px;
+  letter-spacing: -1px;
+  line-height: 1.69;
+}
+
+.bigbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DD2179;
+  font-family: "SF Pro Display Regular";
+  font-weight: 200;
+  border-radius: 58px;
+  font-size: 1.3em;
+  border: none;
+  color: white;
+  box-shadow: 0 6px 20px #c5c5c5;
+  font-style: normal;
+  text-decoration: none;
+}
+.bigbutton:hover {
+  transform: scaleY(0.8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+.bigbutton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight_brand {
+  color: #DA2077;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+.detalhes_plataforma {
+  margin-top: 55px;
+  margin-bottom: 120px;
+}
+.detalhes_plataforma .detalhes_container {
+  display: flex;
+  flex-direction: row;
+}
+.detalhes_plataforma .detalhes .bigbutton {
+  margin-top: 50px;
+  max-width: 350px;
+  padding: 8px 0px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 18px #d6d6d6;
+}
+.detalhes_plataforma img.stackedlogin {
+  flex: 4;
+  width: auto;
+  height: auto;
+  max-width: 420px;
+  max-height: 420px;
+  margin-left: 45px;
+}
+
+#actionitemlist {
+  display: grid;
+  grid-template-columns: 460px 490px;
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-top: 55px;
+}
+
+.actionitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.actionitem .actioniteminfo {
+  padding-top: 15px;
+  margin-left: 30px;
+  flex: 3;
+}
+.actionitem .actioniteminfo .itemtitle {
+  color: #DA2077;
+  font-size: 1.05em;
+  font-family: "SF Pro Text Bold";
+  font-weight: 800;
+  text-wrap: wrap;
+  letter-spacing: -0.05em;
+}
+.actionitem .actioniteminfo .itemtext {
+  color: #444;
+  font-family: "SF Pro Text Light";
+  font-size: 1.05em;
+  font-weight: 100;
+  line-height: 1.69;
+  letter-spacing: -1px;
+}
+.actionitem img {
+  width: auto;
+  height: auto;
+  max-width: 70px;
+  max-height: 70px;
+  text-align: center;
+  vertical-align: baseline;
+  transform: scale(1.2, 1.2);
+  flex: 1;
+}
+
+section.company_stats {
+  background-image: url("../../assets/grid_blue.png"), url("../../assets/background_black.png");
+  background-size: cover;
+  color: white;
+  position: relative;
+  height: 120vh;
+  padding-top: 30px;
+}
+section.company_stats .statheader {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 130px;
+}
+section.company_stats .statheader .stattitle {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 35px;
+  margin: 30px 0px;
+  width: 450px;
+}
+section.company_stats .statheader .statsubtitle {
+  padding-top: 45px;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 50px;
+  width: 450px;
+}
+section.company_stats .statsrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 190px;
+}
+section.company_stats .stats {
+  display: flex;
+  flex-direction: column;
+}
+section.company_stats .stats .statcaption {
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 23px;
+  width: 410px;
+  text-align: center;
+  font-weight: 100;
+}
+section.company_stats .statnumber {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 120px;
+}
+section.company_stats .smaller {
+  font-size: 30px;
+  margin-left: -25px;
+  font-weight: 400;
+}
+section.company_stats footer {
+  background-color: transparent;
+  color: #aaa;
+  padding: 4px 0;
+  height: 15px;
+  margin-top: 124px;
+  font-size: 0.9em;
+  text-align: center;
+  vertical-align: center;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+.opinions {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 830px;
+  height: 490px;
+  border-radius: 20px;
+  z-index: 1;
+  bottom: -370px;
+  left: calc(50vw - 415px);
+}
+
+.mainopinion {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 2fr 1fr;
+  width: 550px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 10;
+  color: black;
+  bottom: -320px;
+  left: calc(50vw - 260px);
+  padding: 15px 60px 20px 60px;
+  box-shadow: 0 3px 6px #ccc;
+}
+.mainopinion h1 {
+  align-self: left;
+  text-align: left;
+  font-family: "SF Pro Text Semibold";
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.mainopinion p {
+  font-size: 1.4rem;
+  text-align: left;
+  font-family: "SF Pro Display Regular";
+  margin: auto 0;
+}
+.mainopinion .opinionauthor {
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.mainopinion .opinionauthor .profile_pic {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.mainopinion .opinionauthor .author_container {
+  margin-left: 15px;
+}
+.mainopinion .opinionauthor .author_container .author_name {
+  text-align: left;
+}
+.mainopinion .opinionauthor .author_container .author_role {
+  text-align: left;
+  font-size: smaller;
+}
+
+.background_opinion {
+  position: absolute;
+  display: flex;
+  width: 330px;
+  height: 290px;
+  z-index: 9;
+  top: 48px;
+  border-radius: 20px;
+  padding: 20px 60px;
+  background-color: white;
+  box-shadow: 0 3px 6px #ccc;
+}
+.background_opinion.right_opinion {
+  left: calc(50vw - 260px - 20px);
+}
+.background_opinion.left_opinion {
+  right: calc(50vw - 260px - 20px);
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+.pricing {
+  margin-top: 500px;
+}
+.pricing .highlight_brand {
+  font-weight: 700;
+}
+.pricing .sectiontitle {
+  max-width: 450px;
+}
+
+.slider_and_show {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider_and_show .slider_container {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+}
+.slider_and_show .labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 460px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.slider_and_show > .slider_container > .slider_container > p {
+  font-size: larger;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.motoristas_slider {
+  height: 100px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+/* Custom slider styles */
+.motoristas_slider {
+  -webkit-appearance: none;
+  width: 360px;
+  height: 10px;
+  /* Thickness of the slider track */
+  background: rgba(221, 33, 121, 0.2);
+  /* Light pink color for the track */
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+/* Slider thumb styles */
+.motoristas_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  /* Size of the slider ball */
+  height: 35px;
+  background: #DD2179;
+  /* Bright pink color for the ball */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.motoristas_slider::-moz-range-thumb {
+  width: 35px;
+  /* Size of the slider ball */
+  height: 35px;
+  background: #DD2179;
+  /* Bright pink color for the ball */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+  /* Removes default border in Firefox */
+}
+
+.slider_calculation {
+  width: 444px;
+  height: 400px;
+  position: relative;
+}
+
+.slider_calculation > .desconto {
+  width: 300px;
+  height: 250px;
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 1px;
+  left: 50px;
+  border-radius: 18px;
+  box-shadow: 0 0 6px #ccc;
+  display: flex;
+  z-index: 0;
+  flex-direction: column;
+}
+
+.desconto > .discount {
+  text-align: end;
+  font-size: 34px;
+  font-weight: 300;
+  font-family: "SF Pro Text Light";
+  color: #DA2077;
+  margin-top: 10px;
+  padding-right: 10px;
+  opacity: 0;
+}
+
+.desconto > .plano {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #DA2077;
+}
+
+.desconto > .diferencaPrecos {
+  font-size: 55px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: black;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.desconto > .diferencaPrecos > .previous_price {
+  font-size: 21px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-left: 10px;
+  padding-top: 32px;
+}
+
+.desconto > .diferencaPrecos > .precoBase {
+  padding-left: 20px;
+  text-align: right;
+}
+
+.desconto > .pormotorista {
+  font-size: 24px;
+  font-family: "SF Pro Text Light";
+  color: #3B3B3B;
+  padding-left: 85px;
+}
+
+.desconto > .mensalmente {
+  font-size: 0.898em;
+  font-family: "SF Pro Text Light";
+  color: #3B3B3B;
+  padding-left: 85px;
+}
+
+.desconto > .num_motoristas_container {
+  width: 115px;
+  height: 115px;
+  border-radius: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  box-shadow: 0 0 10px #ccc;
+  background-color: white;
+  opacity: 1;
+  z-index: 12;
+}
+
+.desconto > .num_motoristas_container div:nth-of-type(1) {
+  color: #DA2077;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2.8em;
+  height: 55px;
+}
+
+.desconto > .num_motoristas_container div:nth-of-type(2) {
+  color: #DA2077;
+  font-family: "SF Pro Text Light";
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+section.ambiente {
+  display: flex;
+  /* padding: 0px 90px ; */
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+section.ambiente .bigbutton {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  height: 34px;
+  margin-top: 50px;
+  width: 210px;
+}
+section.ambiente .sectionheader {
+  text-align: center;
+}
+section.ambiente .sectiontitle {
+  text-align: center;
+  max-width: 400px;
+}
+section.ambiente .sectiontext {
+  text-align: center;
+  max-width: 800px;
+}
+
+.expo_devices {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.expo_devices img:nth-of-type(1) {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.expo_devices img:nth-of-type(2) {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.expo_devices img:nth-of-type(3) {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 580px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 120px;
+}
+
+.question_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.question_item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.question_item .title {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question_item .title h3 {
+  margin: 0;
+}
+.question_item .title .arrow {
+  font-size: 20px;
+  transition: transform 0.5s ease;
+  color: #DA2077;
+}
+.question_item .answer {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.question_item.open .answer {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.question_item.open .arrow {
+  transform: rotate(180deg);
+}
+
+footer {
+  height: 200px;
+  background-color: #ddd;
+  padding: 30px 0;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+#signinlanding {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/background_grid.png");
+  background-size: cover;
+}
+
+.signin_container {
+  display: flex;
+  max-width: 300px;
+  height: 400px;
+  border-radius: 9px;
+  margin: 0 auto;
+  background-color: rgba(226, 226, 226, 0.7764705882);
+  opacity: 0.9;
+  position: relative;
+  padding: 20px;
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  top: 10vh;
+  flex-direction: column;
+}
+.signin_container .form {
+  display: flex;
+  flex-direction: column;
+}
+.signin_container .form a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.65em;
+  color: #707070;
+  align-self: end;
+  margin-right: 24px;
+}
+.signin_container .form .formField {
+  padding-top: 19px;
+  padding-bottom: 9px;
+  padding-left: 11.5px;
+  height: 2px;
+  text-indent: 4px;
+  color: black;
+  border-radius: 20px;
+  font-size: 0.8em;
+  border: none;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.signin_container .form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb;
+}
+.signin_container .form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbb;
+  opacity: 1;
+}
+.signin_container .form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbb;
+  opacity: 1;
+}
+.signin_container .form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb;
+}
+.signin_container .form .formField:focus + .formLabel,
+.signin_container .form .formField:not(:placeholder-shown) + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.6em;
+  padding-top: 5px;
+  top: -3px;
+  transition: font-size 0.2s ease-in, top 0.3s;
+  /* transition: 0.5s ease-out; */
+}
+.signin_container .form .formField + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.8em;
+  left: 15px;
+  top: 7px;
+  /* transition: 0.5s ease-out; */
+  transition: font-size 0.2s ease-in, top 0.3s;
+  color: #555;
+}
+.signin_container .form .form_question {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+.signin_container .title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 25px 0 50px 0;
+  font-family: "SF Pro Text Bold";
+}
+.signin_container .bigbutton {
+  max-width: 120px;
+  font-size: 0.8em;
+  padding: 10px 18px;
+  margin-top: -20px;
+  align-self: center;
+  font-family: "SF Pro Display Regular";
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.signin_container .bottom_options {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  font-size: 0.2em;
+}
+.signin_container p.registar {
+  font-size: 0.7em;
+  color: #707070;
+  text-align: center;
+}
+.signin_container p.registar a {
+  text-decoration: none;
+}
+
+/*
+
+.formField::placeholder {
+    color: transparent
+}
+
+.formField:placeholder-shown ~ .formLabel{
+    cursor: text;
+    top: 20px;
+}
+
+.formLabel {
+    position: absolute;
+    top: 0px;
+}
+
+form {
+    position: relative;
+} */
+
+/*# sourceMappingURL=styles.css.map */

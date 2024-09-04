@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qoov</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-    <link rel="stylesheet" href="./signin.css">
+    <link rel="stylesheet" href="./styles/build/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -15,15 +15,17 @@
 </head>
 
 <body>
-    <main>
+    <main class="sideindented">
         <header>
-            <img src="assets/logo_header.png" alt="Welcome to Qoov" class="brand">
+            <img src="assets/Logo_Blck.svg" alt="Welcome to Qoov" class="brand">
+
             <div class="options">
-                <div class="idioms">
+                <div class="idioms simplebutton">
                     <img id="portugalicon" src="assets/portugal_icon.png" alt="portuguese idiom">
                     <div class="idiomname">
                         Portugal (PT)
                     </div>
+                    <img src="./assets/seta_para_baixo.png" alt="seta virada para baixo">
                 </div>
             </div>
 
@@ -46,17 +48,22 @@
                             required />
                         <label for="password" class="formLabel">Palavra-passe</label>
                     </div>
-                </div>
-
-                <div class="bottom_options">
-                    <input type="checkbox" class="remember" name="remember" />
-                    <label for="remember" class="formLabel">Memorizar os meus dados</label>
                     <a href="./ajuda.html">Precisa de ajuda?</a>
                 </div>
 
-<button class="bigbutton" onclick="window.location.href='./sessao_iniciada.html'">Iniciar Sessão</button>
+                <div class="bottom_options">
+                    <!-- <input type="checkbox" class="remember" name="remember" /> -->
+                    <!-- <label for="remember" class="formLabel">Memorizar os meus dados</label> -->
+                </div>
 
-                <p class="registar">É o seu primeiro acesso à QOOV? <span class="highlight_brand">Registe-se agora</span></p>
+                <a class="bigbutton" href="sessao_iniciada.html">
+                    Iniciar Sessão
+                </a>
+
+                <p class="registar">
+                    É o seu primeiro acesso à QOOV? 
+                    <a href="register1.html" class="highlight_brand">Registe-se agora</a>
+                </p>
 
             </div>
         </section>

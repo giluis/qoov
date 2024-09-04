@@ -1,0 +1,55 @@
+$sfpro: 'SF Pro Display Regular';
+$sfprotextsemi: 'SF Pro Text Semibold';
+$sfprotextbold: 'SF Pro Text Bold';
+$sfprotextheavy: 'SF Pro Text Heavy';
+$sfprotextlight: 'SF Pro Text Light';
+$sfprodisplayregular: 'SF Pro Display Regular';
+
+@font-face {
+    font-family: 'SF Pro Regular';
+    src: url('../../assets/fonts/SFPro/SF-Pro.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Semibold';
+    src: url('../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Bold';
+    src: url('../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Heavy';
+    src: url('../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Light';
+    src: url('../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}

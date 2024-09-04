@@ -1,0 +1,77 @@
+section.company_stats {
+    background-image: url('../../assets/grid_blue.png'), url('../../assets/background_black.png');
+    background-size: cover;
+    color: white;
+    position: relative;
+    height: 120vh;
+    padding-top: 30px;
+
+    .statheader {
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 130px;
+
+        .stattitle {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 35px;
+            margin: 30px 0px;
+            width: 450px;
+        }
+
+        .statsubtitle {
+            padding-top: 45px;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 20px;
+            margin-left: 50px;
+            width: 450px;
+        }
+
+    }
+
+    .statsrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 190px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+
+        .statcaption {
+            font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            font-size: 23px;
+            width: 410px;
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+
+    .statnumber {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 120px;
+    }
+
+    .smaller {
+        font-size: 30px;
+        margin-left: -25px;
+        font-weight: 400;
+    }
+
+    footer {
+        background-color: transparent;
+        color: #aaa;
+        padding: 4px 0;
+        height: 15px;
+        margin-top: 124px;
+        font-size: 0.9em;
+        text-align: center;
+        vertical-align: center;
+    }
+
+}

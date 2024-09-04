@@ -1,0 +1,166 @@
+@import 'fonts.scss';
+
+/* Main Page */
+
+main {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0 20px 0;
+
+    .brand {
+        width: auto;
+        height: auto;
+        max-width: 120px;
+        max-height: 24px;
+    }
+
+    .options {
+        display: flex;
+        justify-content: right;
+        width: 30%;
+        align-items: center;
+        font-size: 0.6em;
+        color: white;
+        height: 20px;
+
+        .idioms {
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            min-width: 35%;
+            background-color: #dd2179;
+            border-radius: 18px;
+            align-items: center;
+            margin-right: 10px;
+
+            #portugalicon {
+                transform: scale(0.7, 0.7);
+            }
+
+            img:nth-of-type(2) {
+                width: auto;
+                height: auto;
+                max-width: 40px;
+                max-height: 20px;
+                transform: scale(0.8, 0.8);
+            }
+
+        }
+
+        .simplebutton {
+            height: 100%;
+            font-size: 0.9em;
+            padding: 0 3px;
+        }
+
+        .simplebutton.signin {
+            padding: 0 20px;
+
+        }
+
+
+    }
+}
+
+
+.simplebutton {
+    background-color: #dd2179;
+    border-radius: 18px;
+    color: white;
+    border: none;
+}
+
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../assets/background_grid.png");
+    background-size: cover;
+
+    .promotion {
+        font-family: $sfprotextheavy;
+        font-size: 0.75em;
+        font-weight: 900;
+        color: #dd2179;
+        margin-bottom: 40px;
+        margin-top: 70px;
+        text-shadow: 0px 2px 20px #bbb;
+    }
+
+    .title {
+        font-size: 3.3em;
+        max-width: 60%;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        color: #303133;
+        margin-bottom: 30px;
+        text-shadow: 0 2px 2px #bbb;
+    }
+
+    .subtitle {
+        color: #777777;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.12em;
+        margin-bottom: 30px;
+        text-shadow: 0 6px 15px #aaa;
+        letter-spacing: -0.03em;
+    }
+
+    .email_and_submit {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-top: 40px;
+
+        input {
+            background-color: #DD2179B9;
+            width: 43%;
+            max-width: 400px;
+            height: 32px;
+            border-radius: 18px;
+            padding-left: 15px;
+            font-size: 0.8em;
+            border: none;
+            color: #dddddd;
+            margin: auto 0px;
+            margin-right: 50px;
+
+            &::placeholder {
+                color: white;
+                opacity: 0.7;
+                font-size: 1.0em;
+            }
+        }
+
+        .bigbutton {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            width: 105px;
+
+            span {
+                margin-left: 10px;
+                text-shadow: 0 3px 18px #d6d6d6;
+            }
+
+            img {
+                transform: scale(0.7, 0.7);
+                margin-right: 7px;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
