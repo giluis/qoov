@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display Regular";
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.sideindented {
+  margin: 0 125px;
+}
+
+.sectionheader {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #DA2077;
+  margin-bottom: 15px;
+}
+
+.sectiontitle {
+  font-family: "Montserrat";
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sectiontext {
+  color: #3B3B3B;
+  font-size: 1.25em;
+  font-family: "SF Pro Text Light";
+  max-width: 510px;
+  letter-spacing: -1px;
+  line-height: 1.69;
+}
+
+.bigbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DD2179;
+  font-family: "SF Pro Display Regular";
+  font-weight: 200;
+  border-radius: 58px;
+  font-size: 1.3em;
+  border: none;
+  color: white;
+  box-shadow: 0 6px 20px #c5c5c5;
+  font-style: normal;
+  text-decoration: none;
+}
+.bigbutton:hover {
+  transform: scaleY(0.8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+.bigbutton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight_brand {
+  color: #DA2077;
+  font-weight: 800;
+}
+
+footer {
+  height: 60px;
+  background-color: #f2f2f2;
+  padding: 30px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.65em;
+  color: #707070;
+  align-self: end;
+  margin-right: 24px;
+}
+.form .formField {
+  padding-top: 19px;
+  padding-bottom: 9px;
+  padding-left: 11.5px;
+  height: 2px;
+  text-indent: 4px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8em;
+  border: 1.5px solid;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  border-color: rgba(226, 226, 226, 0.7764705882);
+}
+.form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb;
+}
+.form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbb;
+  opacity: 1;
+}
+.form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbb;
+  opacity: 1;
+}
+.form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb;
+}
+.form .formField:focus + .formLabel,
+.form .formField:not(:placeholder-shown) + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.6em;
+  padding-top: 5px;
+  top: -3px;
+  transition: font-size 0.2s ease-in, top 0.3s;
+  /* transition: 0.5s ease-out; */
+}
+.form .formField + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.8em;
+  left: 15px;
+  top: 7px;
+  /* transition: 0.5s ease-out; */
+  transition: font-size 0.2s ease-in, top 0.3s;
+  color: #555;
+}
+.form .form_question {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 20px 0;
+}
+header .brand {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 24px;
+}
+header .options {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  align-items: center;
+  font-size: 0.6em;
+  color: white;
+  height: 20px;
+}
+header .options .idioms {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  min-width: 35%;
+  background-color: #dd2179;
+  border-radius: 18px;
+  align-items: center;
+  margin-right: 10px;
+}
+header .options .idioms #portugalicon {
+  transform: scale(0.7, 0.7);
+}
+header .options .idioms img:nth-of-type(2) {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 20px;
+  transform: scale(0.8, 0.8);
+}
+header .options .simplebutton {
+  height: 100%;
+  font-size: 0.9em;
+  padding: 0 3px;
+}
+header .options .simplebutton.signin {
+  padding: 0 20px;
+}
+
+.simplebutton {
+  background-color: #dd2179;
+  border-radius: 18px;
+  color: white;
+  border: none;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+.register_container0 {
+  max-width: 240px;
+}
+.register_container0 .subtitle {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=register_initial.css.map */

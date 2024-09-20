@@ -27,16 +27,22 @@
         display: flex;
         margin-left: 40px;
         align-items: center;
+
+        .labels {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 460px;
+            margin-top: 10px;
+            margin-left: 50px;
+            font-size: 0.7em;
+
+            div strong {
+                font-size: 0.7em;
+            }
+        }
     }
 
-    .labels {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 460px;
-        margin-top: 10px;
-        margin-left: 50px;
-    }
 }
 
 .slider_and_show>.slider_container>.slider_container>p {

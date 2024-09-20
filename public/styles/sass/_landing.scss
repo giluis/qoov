@@ -6,74 +6,8 @@ main {
     height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 18px 0 20px 0;
-
-    .brand {
-        width: auto;
-        height: auto;
-        max-width: 120px;
-        max-height: 24px;
-    }
-
-    .options {
-        display: flex;
-        justify-content: right;
-        width: 30%;
-        align-items: center;
-        font-size: 0.6em;
-        color: white;
-        height: 20px;
-
-        .idioms {
-            display: flex;
-            justify-content: space-around;
-            height: 100%;
-            min-width: 35%;
-            background-color: #dd2179;
-            border-radius: 18px;
-            align-items: center;
-            margin-right: 10px;
-
-            #portugalicon {
-                transform: scale(0.7, 0.7);
-            }
-
-            img:nth-of-type(2) {
-                width: auto;
-                height: auto;
-                max-width: 40px;
-                max-height: 20px;
-                transform: scale(0.8, 0.8);
-            }
-
-        }
-
-        .simplebutton {
-            height: 100%;
-            font-size: 0.9em;
-            padding: 0 3px;
-        }
-
-        .simplebutton.signin {
-            padding: 0 20px;
-
-        }
 
 
-    }
-}
-
-
-.simplebutton {
-    background-color: #dd2179;
-    border-radius: 18px;
-    color: white;
-    border: none;
-}
 
 
 #landing {

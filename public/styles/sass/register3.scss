@@ -1,0 +1,205 @@
+@use 'common.scss';
+@import 'fonts.scss';
+
+
+.register_container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px ;
+    align-self:flex-start;
+    width: 100%;
+
+
+    .column2 {
+        display: grid;
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr  1fr;
+        justify-content: space-around;
+        flex-direction: column;
+
+        // .slider_and_show {
+        //     display:flex;
+        //     flex-direction: column;
+
+        //     .slider_container {
+        //         min-width: 420px;
+        //         display: flex;
+        //         flex-direction: column;
+        //         font-size: 20px;
+        //         display: flex;
+        //         text-align: center;
+        //         align-items: center;
+
+        //         .labels {
+        //             display: flex;
+        //             flex-direction: row;
+        //             justify-content: space-between;
+        //             width: 460px;
+        //             margin-top: 10px;
+        //             margin-left: 50px;
+        //             font-size: 0.7em;
+
+        //             div strong {
+        //                 font-size: 0.7em;
+        //             }
+        //         }
+        //     }
+
+        // }
+    }
+
+    // .motoristas_slider {
+    //     height: 100px;
+    //     margin-left: 50px;
+    //     margin-top: 30px;
+    // }
+
+    // /* Custom slider styles */
+    // .motoristas_slider {
+    //     -webkit-appearance: none;
+    //     width: 360px;
+    //     height: 10px;
+    //     /* Thickness of the slider track */
+    //     background: #DD217933;
+    //     /* Light pink color for the track */
+    //     outline: none;
+    //     border-radius: 5px;
+    //     border: 2px solid white;
+    // }
+
+    // /* Slider thumb styles */
+    // .motoristas_slider::-webkit-slider-thumb {
+    //     -webkit-appearance: none;
+    //     appearance: none;
+    //     width: 35px;
+    //     /* Size of the slider ball */
+    //     height: 35px;
+    //     background: #DD2179;
+    //     /* Bright pink color for the ball */
+    //     cursor: pointer;
+    //     border-radius: 50%;
+    //     border: 2px solid white;
+    // }
+
+    // .motoristas_slider::-moz-range-thumb {
+    //     width: 35px;
+    //     /* Size of the slider ball */
+    //     height: 35px;
+    //     background: #DD2179;
+    //     /* Bright pink color for the ball */
+    //     cursor: pointer;
+    //     border-radius: 50%;
+    //     border: 2px solid white;
+    //     /* Removes default border in Firefox */
+    // }
+
+
+    .slider_calculation {
+        position: relative;
+    }
+
+    .slider_calculation>.desconto {
+        background-color: beige;
+        /* border: 1px solid blue; */
+        position: absolute;
+        top: 1px;
+        left: 50px;
+        border-radius: 18px;
+        box-shadow: 0 0 6px #ccc;
+        display: flex;
+        z-index: 0;
+        flex-direction: column;
+    }
+
+    // .desconto>.discount {
+    //     text-align: end;
+    //     font-size: 34px;
+    //     font-weight: 300;
+    //     font-family: $sfprotextlight;
+    //     color: #DA2077;
+    //     margin-top: 10px;
+    //     padding-right: 10px;
+    //     opacity: 0;
+    // }
+
+    // .desconto>.plano {
+    //     text-align: center;
+    //     font-size: 30px;
+    //     font-weight: 700;
+    //     font-family: 'Montserrat';
+    //     color: #DA2077;
+    // }
+
+    // .desconto>.diferencaPrecos {
+    //     font-size: 55px;
+    //     font-family: 'Montserrat';
+    //     font-weight: 700;
+    //     color: black;
+    //     margin-top: 20px;
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    // .desconto>.diferencaPrecos>.previous_price {
+    //     font-size: 21px;
+    //     font-weight: 400;
+    //     text-decoration: line-through;
+    //     margin-left: 10px;
+    //     padding-top: 32px;
+    // }
+
+    // .desconto>.diferencaPrecos>.precoBase {
+    //     padding-left: 20px;
+    //     text-align: right;
+
+    // }
+
+    // .desconto>.pormotorista {
+    //     font-size: 24px;
+    //     font-family: $sfprotextlight;
+    //     color: #3B3B3B;
+    //     padding-left: 85px;
+    // }.d
+
+    // esconto>.mensalmente {
+    //     font-size: 0.898em;
+    //     font-family: $sfprotextlight;
+    //     color: #3B3B3B;
+    //     padding-left: 85px;
+    // }
+
+    // .desconto>.num_motoristas_container {
+    //     width: 115px;
+    //     height: 115px;
+    //     border-radius: 100%;
+    //     border-radius: 50%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     position: absolute;
+    //     top: -50px;
+    //     left: -50px;
+    //     box-shadow: 0 0 10px #ccc;
+    //     background-color: white;
+    //     opacity: 1;
+    //     z-index: 12;
+    // }
+
+    // .desconto>.num_motoristas_container div:nth-of-type(1) {}
+    // color: #DA2077;
+    //     font-family: 'Montserrat';
+    //     font-weight: 700;
+    //     font-size: 2.8em;
+    //     height: 55px;
+    // 
+    
+    // .desconto>.num_motoristas_container div:nth-of-type(2) {
+    //     color: #DA2077;
+    //     font-family: $sfprotextlight;
+    //     font-weight: 300;
+    //     font-size: 16px;
+    //     margin-top: -10px;
+    // }
+
+}

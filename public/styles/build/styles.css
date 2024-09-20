@@ -45,63 +45,6 @@ main {
   height: 100vh;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 18px 0 20px 0;
-}
-header .brand {
-  width: auto;
-  height: auto;
-  max-width: 120px;
-  max-height: 24px;
-}
-header .options {
-  display: flex;
-  justify-content: right;
-  width: 30%;
-  align-items: center;
-  font-size: 0.6em;
-  color: white;
-  height: 20px;
-}
-header .options .idioms {
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-  min-width: 35%;
-  background-color: #dd2179;
-  border-radius: 18px;
-  align-items: center;
-  margin-right: 10px;
-}
-header .options .idioms #portugalicon {
-  transform: scale(0.7, 0.7);
-}
-header .options .idioms img:nth-of-type(2) {
-  width: auto;
-  height: auto;
-  max-width: 40px;
-  max-height: 20px;
-  transform: scale(0.8, 0.8);
-}
-header .options .simplebutton {
-  height: 100%;
-  font-size: 0.9em;
-  padding: 0 3px;
-}
-header .options .simplebutton.signin {
-  padding: 0 20px;
-}
-
-.simplebutton {
-  background-color: #dd2179;
-  border-radius: 18px;
-  color: white;
-  border: none;
-}
-
 #landing {
   display: flex;
   flex-direction: column;
@@ -284,6 +227,143 @@ body::-webkit-scrollbar {
   font-weight: 800;
 }
 
+footer {
+  height: 60px;
+  background-color: #f2f2f2;
+  padding: 30px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.65em;
+  color: #707070;
+  align-self: end;
+  margin-right: 24px;
+}
+.form .formField {
+  padding-top: 19px;
+  padding-bottom: 9px;
+  padding-left: 11.5px;
+  height: 2px;
+  text-indent: 4px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8em;
+  border: 1.5px solid;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  border-color: rgba(226, 226, 226, 0.7764705882);
+}
+.form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb;
+}
+.form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbb;
+  opacity: 1;
+}
+.form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbb;
+  opacity: 1;
+}
+.form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb;
+}
+.form .formField:focus + .formLabel,
+.form .formField:not(:placeholder-shown) + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.6em;
+  padding-top: 5px;
+  top: -3px;
+  transition: font-size 0.2s ease-in, top 0.3s;
+  /* transition: 0.5s ease-out; */
+}
+.form .formField + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.8em;
+  left: 15px;
+  top: 7px;
+  /* transition: 0.5s ease-out; */
+  transition: font-size 0.2s ease-in, top 0.3s;
+  color: #555;
+}
+.form .form_question {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 20px 0;
+}
+header .brand {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 24px;
+}
+header .options {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  align-items: center;
+  font-size: 0.6em;
+  color: white;
+  height: 20px;
+}
+header .options .idioms {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  min-width: 35%;
+  background-color: #dd2179;
+  border-radius: 18px;
+  align-items: center;
+  margin-right: 10px;
+}
+header .options .idioms #portugalicon {
+  transform: scale(0.7, 0.7);
+}
+header .options .idioms img:nth-of-type(2) {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 20px;
+  transform: scale(0.8, 0.8);
+}
+header .options .simplebutton {
+  height: 100%;
+  font-size: 0.9em;
+  padding: 0 3px;
+}
+header .options .simplebutton.signin {
+  padding: 0 20px;
+}
+
+.simplebutton {
+  background-color: #dd2179;
+  border-radius: 18px;
+  color: white;
+  border: none;
+}
+
 @font-face {
   font-family: "SF Pro Regular";
   src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
@@ -391,6 +471,143 @@ body::-webkit-scrollbar {
 .highlight_brand {
   color: #DA2077;
   font-weight: 800;
+}
+
+footer {
+  height: 60px;
+  background-color: #f2f2f2;
+  padding: 30px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.65em;
+  color: #707070;
+  align-self: end;
+  margin-right: 24px;
+}
+.form .formField {
+  padding-top: 19px;
+  padding-bottom: 9px;
+  padding-left: 11.5px;
+  height: 2px;
+  text-indent: 4px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8em;
+  border: 1.5px solid;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  border-color: rgba(226, 226, 226, 0.7764705882);
+}
+.form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb;
+}
+.form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbb;
+  opacity: 1;
+}
+.form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbb;
+  opacity: 1;
+}
+.form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb;
+}
+.form .formField:focus + .formLabel,
+.form .formField:not(:placeholder-shown) + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.6em;
+  padding-top: 5px;
+  top: -3px;
+  transition: font-size 0.2s ease-in, top 0.3s;
+  /* transition: 0.5s ease-out; */
+}
+.form .formField + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.8em;
+  left: 15px;
+  top: 7px;
+  /* transition: 0.5s ease-out; */
+  transition: font-size 0.2s ease-in, top 0.3s;
+  color: #555;
+}
+.form .form_question {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 20px 0;
+}
+header .brand {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 24px;
+}
+header .options {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  align-items: center;
+  font-size: 0.6em;
+  color: white;
+  height: 20px;
+}
+header .options .idioms {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  min-width: 35%;
+  background-color: #dd2179;
+  border-radius: 18px;
+  align-items: center;
+  margin-right: 10px;
+}
+header .options .idioms #portugalicon {
+  transform: scale(0.7, 0.7);
+}
+header .options .idioms img:nth-of-type(2) {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 20px;
+  transform: scale(0.8, 0.8);
+}
+header .options .simplebutton {
+  height: 100%;
+  font-size: 0.9em;
+  padding: 0 3px;
+}
+header .options .simplebutton.signin {
+  padding: 0 20px;
+}
+
+.simplebutton {
+  background-color: #dd2179;
+  border-radius: 18px;
+  color: white;
+  border: none;
 }
 
 @font-face {
@@ -769,13 +986,17 @@ section.company_stats footer {
   margin-left: 40px;
   align-items: center;
 }
-.slider_and_show .labels {
+.slider_and_show .slider_container .labels {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 460px;
   margin-top: 10px;
   margin-left: 50px;
+  font-size: 0.7em;
+}
+.slider_and_show .slider_container .labels div strong {
+  font-size: 0.7em;
 }
 
 .slider_and_show > .slider_container > .slider_container > p {
@@ -1049,12 +1270,6 @@ section.ambiente .sectiontext {
   transform: rotate(180deg);
 }
 
-footer {
-  height: 200px;
-  background-color: #ddd;
-  padding: 30px 0;
-}
-
 @font-face {
   font-family: "SF Pro Regular";
   src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
@@ -1118,85 +1333,16 @@ footer {
   top: 10vh;
   flex-direction: column;
 }
-.signin_container .form {
-  display: flex;
-  flex-direction: column;
-}
-.signin_container .form a {
-  text-decoration: none;
-  font-family: inherit;
-  color: inherit;
-  font-size: 0.65em;
-  color: #707070;
-  align-self: end;
-  margin-right: 24px;
-}
-.signin_container .form .formField {
-  padding-top: 19px;
-  padding-bottom: 9px;
-  padding-left: 11.5px;
-  height: 2px;
-  text-indent: 4px;
-  color: black;
-  border-radius: 20px;
-  font-size: 0.8em;
-  border: none;
-  position: relative;
-  display: table-cell;
-  vertical-align: bottom;
-}
-.signin_container .form ::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #bbb;
-}
-.signin_container .form :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #bbb;
-  opacity: 1;
-}
-.signin_container .form ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #bbb;
-  opacity: 1;
-}
-.signin_container .form :-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #bbb;
-}
-.signin_container .form .formField:focus + .formLabel,
-.signin_container .form .formField:not(:placeholder-shown) + .formLabel {
-  position: absolute;
-  font-family: inherit;
-  font-size: 0.6em;
-  padding-top: 5px;
-  top: -3px;
-  transition: font-size 0.2s ease-in, top 0.3s;
-  /* transition: 0.5s ease-out; */
-}
-.signin_container .form .formField + .formLabel {
-  position: absolute;
-  font-family: inherit;
-  font-size: 0.8em;
-  left: 15px;
-  top: 7px;
-  /* transition: 0.5s ease-out; */
-  transition: font-size 0.2s ease-in, top 0.3s;
-  color: #555;
-}
-.signin_container .form .form_question {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-bottom: 12px;
-}
-.signin_container .title {
+
+.title {
   font-weight: 700;
   text-align: center;
   font-size: 1.4rem;
   margin: 25px 0 50px 0;
   font-family: "SF Pro Text Bold";
 }
-.signin_container .bigbutton {
+
+.bigbutton {
   max-width: 120px;
   font-size: 0.8em;
   padding: 10px 18px;
@@ -1206,19 +1352,21 @@ footer {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.signin_container .bottom_options {
+
+.bottom_options {
   position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
   font-size: 0.2em;
 }
-.signin_container p.registar {
+
+p.registar {
   font-size: 0.7em;
   color: #707070;
   text-align: center;
 }
-.signin_container p.registar a {
+p.registar a {
   text-decoration: none;
 }
 

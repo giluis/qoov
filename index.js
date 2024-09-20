@@ -19,40 +19,40 @@
 
 const actionItems = [
     {
-        src: "assets/icon_target.jpeg",
+        src: "public/assets/icon_target.jpeg",
         title: "Centralizar o seu negócio",
         text: " Todas as plataformas (Uber, Bolt, Via Verde e mais) reunidas num único lugar "
     },
 
     {
-        src: "assets/icon_calculator.jpeg",
+        src: "public/assets/icon_calculator.jpeg",
         title: "Calcular instantaneamente o seu lucro",
         text: "Insira todas as suas despesas (manutençoes, leasing/renting, combustível e mais)"
     },
 
 
     {
-        src: "assets/icon_coin.jpeg",
+        src: "public/assets/icon_coin.jpeg",
         title: "Faturação geral",
         text: "Agrupe a faturação de ambas as plataformas (Uber e Bolt) e controle tudo simultaneamente"
     },
 
     {
-        src: "assets/icon_plus.jpeg",
+        src: "public/assets/icon_plus.jpeg",
         title: "Apurar o vencimento dos seus motoristas",
         text: "Saiba o que pagar ao seu motorista para qualquer intervalo de tempo"
     },
 
 
     {
-        src: "assets/icon_star.jpeg",
+        src: "public/assets/icon_star.jpeg",
         title: "Comparar os seus motoristas",
         text: "Compare os ganhos e os gastos dos seus motoristas"
     },
 
 
     {
-        src: "assets/icon_chat.jpeg",
+        src: "public/assets/icon_chat.jpeg",
         title: "Comunicar diretamente com os seus motoristas",
         text: "Envie relatórios para os seus motoritsas de forma instantânea"
     }]

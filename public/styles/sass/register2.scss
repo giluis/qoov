@@ -1,0 +1,19 @@
+@use 'common.scss';
+@import 'fonts.scss';
+
+
+.register_container2 {
+    max-width: 280px;
+
+    .subtitle {
+        margin-bottom: 0;
+    }
+
+    .form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .form_question {
+            margin-bottom: 5px;
+        }
+    }
+}

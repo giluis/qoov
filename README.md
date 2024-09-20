@@ -1,4 +1,6 @@
 # Questões:
+- Todas as plataformas / todas as suas plataformas?
+
 
 # TODO:
 - [X] Stats adjust variable size
@@ -26,7 +28,7 @@
 
 # Design que falta
 - [ ] Mudar de idioma
-- [ ] Exemplar de app para pôr na expo de devices
-- [ ] Pricing para +30 motoristas
-- [ ] Melhor design para FAQs 
+- [X] Exemplar de app para pôr na expo de devices
+- [X] Pricing para +30 motoristas
+- [X] Melhor design para FAQs 
 - [ ] Página de "precisa de ajuda"?
