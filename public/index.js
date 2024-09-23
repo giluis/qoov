@@ -1,6 +1,5 @@
-
 (async function main() {
-    let text = await (await fetch('pricing_tiers.csv')).text()
+    let text = await (await fetch('../pricing_tiers.csv')).text()
     const result = buildResult(text)
 
     let slider = document.querySelector(".motoristas_slider")
@@ -19,40 +18,40 @@
 
 const actionItems = [
     {
-        src: "public/assets/icon_target.jpeg",
+        src: "assets/icon_target.jpeg",
         title: "Centralizar o seu negócio",
         text: " Todas as plataformas (Uber, Bolt, Via Verde e mais) reunidas num único lugar "
     },
 
     {
-        src: "public/assets/icon_calculator.jpeg",
+        src: "assets/icon_calculator.jpeg",
         title: "Calcular instantaneamente o seu lucro",
         text: "Insira todas as suas despesas (manutençoes, leasing/renting, combustível e mais)"
     },
 
 
     {
-        src: "public/assets/icon_coin.jpeg",
+        src: "assets/icon_coin.jpeg",
         title: "Faturação geral",
         text: "Agrupe a faturação de ambas as plataformas (Uber e Bolt) e controle tudo simultaneamente"
     },
 
     {
-        src: "public/assets/icon_plus.jpeg",
+        src: "assets/icon_plus.jpeg",
         title: "Apurar o vencimento dos seus motoristas",
         text: "Saiba o que pagar ao seu motorista para qualquer intervalo de tempo"
     },
 
 
     {
-        src: "public/assets/icon_star.jpeg",
+        src: "assets/icon_star.jpeg",
         title: "Comparar os seus motoristas",
         text: "Compare os ganhos e os gastos dos seus motoristas"
     },
 
 
     {
-        src: "public/assets/icon_chat.jpeg",
+        src: "assets/icon_chat.jpeg",
         title: "Comunicar diretamente com os seus motoristas",
         text: "Envie relatórios para os seus motoritsas de forma instantânea"
     }]
@@ -97,7 +96,7 @@ function createItem(imgsrc, inputTitle, inputText) {
 
     root.appendChild(iteminfo)
 
-    document.querySelector("#actionitemlist").appendChild(root)
+    document.querySelector("#actionitemlist")?.appendChild(root)
 }
 
 function setupFAQs() {

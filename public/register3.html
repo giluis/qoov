@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./styles/build/common.css">
     <link rel="stylesheet" href="./styles/build/register_common.css">
     <link rel="stylesheet" href="./styles/build/register3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="index.js" defer></script>
     <title>Register</title>
 </head>
 
@@ -39,11 +42,11 @@
                     <div class="title">
                         O plano certo para o seu negócio
                     </div>
-                    <ul>
-                        <li>✔ Experimente grátis durante <span>14 dias</span></li>
-                        <li>✔ Sem compromisso. Cancele quando quiser</li>
-                        <li>✔ Tudo reunido numa app com preço reduzido</li>
-                        <li>✔ Sem limite de utilização</li>
+                    <ul class="advantages">
+                        <li><span class="checkmark">✔</span> Experimente grátis durante <span>14 dias</span></li>
+                        <li><span class="checkmark">✔</span> Sem compromisso. Cancele quando quiser</li>
+                        <li><span class="checkmark">✔</span> Tudo reunido numa app com preço reduzido</li>
+                        <li><span class="checkmark">✔</span> Sem limite de utilização</li>
                     </ul>
                     <a href="register3.html" class="bigbutton">
                         Seguinte
@@ -51,6 +54,36 @@
 
                 </div>
                 <div class="column2">
+                    <div class="first">
+                        <div class="desconto">
+                            <div class="discount">-8%</div>
+                            <div class="plano">O seu plano</div>
+                            <div class="diferencaPrecos">
+                                <div class="precoBase">12€</div>
+                                <div class="previous_price">12€</div>
+                            </div>
+                            <div class="pormotorista">por motorista</div>
+                            <div class="mensalmente">cobrado mensalmente</div>
+                            <div class="num_motoristas_container">
+                                <div class="num_motoristas_display">7</div>
+                                <div>motoristas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="slider_container sectiontext">
+                            <p>Quanto maior a frota, maior a poupança. <br>Quantos <span
+                                    class="highlight_brand">motoristas</span>
+                                tem a sua frota?</p>
+                            <!-- Value 212 is computed based on the mapping of [1:1000] -> [1:30] -->
+                            <input min=1 max=1000 type="range" value=212 name="num_motoristas"
+                                class="motoristas_slider">
+                            <div class="labels">
+                                <div><strong>1</strong> motorista</div>
+                                <div><strong>+30</strong> motoristas</div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- <div class="slider_and_show">
                         </div>
                         <div class="slider_container sectiontext">
@@ -65,27 +98,13 @@
                                 <div><strong>+30</strong> motoristas</div>
                             </div> -->
                     <!-- </div> -->
-                    <div class="slider_and_show">
+                    <!-- <div class="slider_and_show">
                         <div class="slider_calculation">
-                            <div class="desconto">
-                                <div class="discount">-8%</div>
-                                <div class="plano">O seu plano</div>
-                                <div class="diferencaPrecos">
-                                    <div class="precoBase">12€</div>
-                                    <div class="previous_price">12€</div>
-                                </div>
-                                <div class="pormotorista">por motorista</div>
-                                <div class="mensalmente">cobrado mensalmente</div>
-                                <div class="num_motoristas_container">
-                                    <div class="num_motoristas_display">7</div>
-                                    <div>motoristas</div>
-                                </div>
-                            </div>
                         </div>
                         <div>
                             Second
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>

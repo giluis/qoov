@@ -341,4 +341,31 @@ header .options .simplebutton.signin {
   width: 100%;
 }
 
+.passosrestantes {
+  text-align: center;
+  font-family: "SF Pro Text Light";
+  font-size: 0.7em;
+  font-weight: 100;
+  color: #777;
+}
+.passosrestantes .highlight {
+  font-family: "SF Pro Text Bold";
+  color: black;
+}
+
+.title {
+  margin-top: 10px;
+  font-family: "SF Pro Text Bold";
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.bigbutton {
+  padding: 6px 25px;
+  font-size: 0.8em;
+  max-width: 100px;
+  align-self: center;
+  margin: auto;
+}
+
 /*# sourceMappingURL=register_common.css.map */
