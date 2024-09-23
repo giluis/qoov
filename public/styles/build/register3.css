@@ -289,63 +289,51 @@ header .options .simplebutton.signin {
 .register_container3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px;
+  grid-template-rows: 300px 200px;
   align-self: flex-start;
   width: 100%;
 }
-.register_container3 .column1 {
-  padding-left: 40px;
+.register_container3 .details {
+  align-self: center;
+  padding-left: 80px;
 }
-.register_container3 .column1 .passosrestantes {
+.register_container3 .details .passosrestantes {
   text-align: start;
 }
-.register_container3 .column1 .title {
+.register_container3 .details .title {
   text-align: start;
 }
-.register_container3 .column1 ul {
+.register_container3 .details ul {
   padding: 0;
   list-style-type: none;
 }
-.register_container3 .column1 ul li {
+.register_container3 .details ul li {
   font-family: "SF Pro Text Light";
   font-size: 0.8em;
   color: #323232;
 }
-.register_container3 .column1 ul li span.checkmark {
+.register_container3 .details ul li span.checkmark {
   margin-right: 12px;
 }
-.register_container3 .column1 .bigbutton {
+.register_container3 .details .bigbutton {
   font-size: 1em;
   max-width: 80px;
   margin: 0;
 }
-.register_container3 .column2 {
-  font-family: "SF Pro Text Semibold";
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10fr 7fr;
-  justify-content: space-around;
-  flex-direction: column;
-}
-.register_container3 .column2 .first {
+.register_container3 .desconto {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.register_container3 .column2 .first .desconto {
   font-family: "SF Pro Text Semibold";
-  position: relative;
-  display: flex;
   flex-direction: column;
   width: 244px;
   height: 184px;
   border-radius: 18px;
   box-shadow: 0 0 6px #ccc;
   background-color: white;
+  align-self: center;
   z-index: 0;
 }
-.register_container3 .column2 .first .desconto .discount {
+.register_container3 .desconto .discount {
   font-family: "SF Pro Text Semibold";
   text-align: end;
   font-size: 1.8em;
@@ -356,7 +344,7 @@ header .options .simplebutton.signin {
   opacity: 0;
   margin-bottom: 8px;
 }
-.register_container3 .column2 .first .desconto .plano {
+.register_container3 .desconto .plano {
   font-family: "SF Pro Text Semibold";
   text-align: center;
   font-size: 1.2em;
@@ -364,7 +352,7 @@ header .options .simplebutton.signin {
   font-family: "Montserrat";
   color: #DA2077;
 }
-.register_container3 .column2 .first .desconto .diferencaPrecos {
+.register_container3 .desconto .diferencaPrecos {
   font-size: 1.8em;
   font-family: "Montserrat";
   font-weight: 700;
@@ -372,31 +360,31 @@ header .options .simplebutton.signin {
   display: flex;
   justify-content: center;
 }
-.register_container3 .column2 .first .desconto .diferencaPrecos .previous_price {
+.register_container3 .desconto .diferencaPrecos .previous_price {
   font-size: 1em;
   font-weight: 400;
   text-decoration: line-through;
   margin-left: 10px;
 }
-.register_container3 .column2 .first .desconto .diferencaPrecos .precoBase {
+.register_container3 .desconto .diferencaPrecos .precoBase {
   font-size: 1.4em;
   text-align: right;
 }
-.register_container3 .column2 .first .desconto .pormotorista {
+.register_container3 .desconto .pormotorista {
   font-size: 1.2em;
   font-family: "SF Pro Text Light";
   text-align: center;
   color: #3B3B3B;
 }
-.register_container3 .column2 .first .desconto .mensalmente {
+.register_container3 .desconto .mensalmente {
   font-size: 0.72em;
   font-family: "SF Pro Text Light";
   color: #3B3B3B;
   text-align: center;
 }
-.register_container3 .column2 .first .desconto .num_motoristas_container {
-  width: 108px;
-  height: 108px;
+.register_container3 .desconto .num_motoristas_container {
+  width: 68px;
+  height: 68px;
   border-radius: 100%;
   border-radius: 50%;
   display: flex;
@@ -404,40 +392,45 @@ header .options .simplebutton.signin {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -55px;
-  left: -55px;
+  top: -34px;
+  left: -34px;
   box-shadow: 0 0 10px #ccc;
   background-color: white;
   opacity: 1;
   z-index: 12;
 }
-.register_container3 .column2 .first .desconto .num_motoristas_container div:nth-of-type(1) {
+.register_container3 .desconto .num_motoristas_container div:nth-of-type(1) {
   color: #DA2077;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 1.6em;
   height: 55px;
 }
-.register_container3 .column2 .first .desconto .num_motoristas_container div:nth-of-type(2) {
+.register_container3 .desconto .num_motoristas_container div:nth-of-type(2) {
   color: #DA2077;
   font-family: "SF Pro Text Light";
   font-weight: 300;
-  font-size: 0.9em;
-  margin-top: -15px;
+  font-size: 0.6em;
+  margin-top: -25px;
 }
-.register_container3 .column2 .second {
+.register_container3 .slider_container {
+  grid-area: 2/1/-1/-1;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* Custom slider styles */
   /* Slider thumb styles */
 }
-.register_container3 .column2 .second .motoristas_slider {
+.register_container3 .slider_container .motoristas_slider {
   height: 100px;
-  margin-left: 50px;
-  margin-top: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
-.register_container3 .column2 .second .motoristas_slider {
+.register_container3 .slider_container .motoristas_slider {
   -webkit-appearance: none;
   width: 360px;
-  height: 10px;
+  height: 8px;
   /* Thickness of the slider track */
   background: rgba(221, 33, 121, 0.2);
   /* Light pink color for the track */
@@ -445,22 +438,22 @@ header .options .simplebutton.signin {
   border-radius: 5px;
   border: 2px solid white;
 }
-.register_container3 .column2 .second .motoristas_slider::-webkit-slider-thumb {
+.register_container3 .slider_container .motoristas_slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 35px;
+  width: 30px;
   /* Size of the slider ball */
-  height: 35px;
+  height: 30px;
   background: #DD2179;
   /* Bright pink color for the ball */
   cursor: pointer;
   border-radius: 50%;
   border: 2px solid white;
 }
-.register_container3 .column2 .second .motoristas_slider::-moz-range-thumb {
-  width: 35px;
+.register_container3 .slider_container .motoristas_slider::-moz-range-thumb {
+  width: 30px;
   /* Size of the slider ball */
-  height: 35px;
+  height: 30px;
   background: #DD2179;
   /* Bright pink color for the ball */
   cursor: pointer;
@@ -468,26 +461,20 @@ header .options .simplebutton.signin {
   border: 2px solid white;
   /* Removes default border in Firefox */
 }
-.register_container3 .column2 .second .slider_container {
-  min-width: 420px;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  display: flex;
+.register_container3 .slider_container p {
+  font-size: 0.8em;
   text-align: center;
-  align-items: center;
 }
-.register_container3 .column2 .second .slider_container .labels {
+.register_container3 .slider_container .labels {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 460px;
-  margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 20px;
   font-size: 0.7em;
+  width: 100%;
 }
-.register_container3 .column2 .second .slider_container .labels div strong {
-  font-size: 0.7em;
+.register_container3 .slider_container .labels div strong {
+  font-size: 1em;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=register3.css.map */
