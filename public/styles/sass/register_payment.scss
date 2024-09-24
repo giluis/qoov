@@ -1,8 +1,98 @@
+@import "fonts.scss";
 .register_container4 {
+    max-width: 320px;
+
+    .explanation {
+        font-family: $sfprotextlight;
+        width: 90%;
+        color: #323232;
+        text-align: center;
+        font-size: 0.8em;
+
+        strong {
+            font-family: $sfprotextbold;
+
+        }
+    }
+    .title{
+        width: 100%
+    }
+
     img {
         width: auto;
         height: auto;
         max-width: 30px;
         max-height: 40px;
+    }
+
+    .creditcard {
+        display: flex;
+        width: 100%;
+        height: 30px;
+        background-color: white;
+        color: gray;
+        font-size: 0.6em;
+        padding: 5px 10px;
+        border-style: none;
+        border:1px solid gray;
+        border-radius: 18px;
+        max-width: 300px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        transition: border 0.5s;
+        transition: scale 0.2s;
+
+        img {
+            width: auto;
+            height: auto;
+            max-width: 140px;
+            max-height: 20px;
+        }
+    }
+
+    .creditcard.selected {
+        border: solid 2px black;
+        scale: 1.10;
+    }
+
+    .creditcard:hover:not(.selected) {
+        border: solid 2px black;
+        scale: 1.05;
+    }
+
+    .creditcard:active {
+        border: solid 2px black;
+        scale: 1.10;
+    }
+
+
+    .alternatives {
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 110px 110px 110px;
+        justify-content: center;
+        img {
+            width: auto;
+            height: auto;
+            max-width: 110px;
+            max-height: 35px;
+            opacity: 0.5;
+            transition: opacity 0.5s;
+            transition: scale 0.2s;
+        }
+
+        img:hover {
+            opacity: 0.8;
+            scale: 1.02;
+        }
+
+        img.selected {
+            opacity: 1.0;
+            scale: 1.10;
+        }
+
+
     }
 }

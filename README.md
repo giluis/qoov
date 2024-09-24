@@ -1,8 +1,18 @@
 # Questões:
 - Todas as plataformas / todas as suas plataformas?
+- Nome próprio *E* apelido (card_payment.html)
 
 
 # TODO:
+- [ ] letra maior no quadradinho dos descontos
+- [ ] adicionar animação de expo devices
+- [ ] ajustar FAQs
+- [ ] logo da QOOV na tab 
+- [ ] Inputs the cartão de crédito
+- [ ] Apple pay, google pay, paypal integration
+- [ ] Form validation
+- [ ] Add Qoov logo to header 
+- [ ] Tamanhos e inconsistências no register flow
 - [X] Stats adjust variable size
 - [X] px to rem / em (partially done)
 - [X] adicionar texto às FAQs que faltam 
@@ -21,10 +31,6 @@
 - [X] ajustar tamanho de botões
 - [X] ajustar tamanho de pricing discount
 - [X] separar csv em módulos
-- [ ] letra maior no quadradinho dos descontos
-- [ ] adicionar animação de expo devices
-- [ ] ajustar FAQs
-- [ ] logo da QOOV na tab
 
 # Design que falta
 - [ ] Mudar de idioma

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/build/register_common.css">
     <link rel="stylesheet" href="./styles/build/register_initial.css">
-    <link rel="stylesheet" href="./styles/build/register_payment.css">
+    <link rel="stylesheet" href="./styles/build/card_payment.css">
+    <link rel="stylesheet" href="./styles/build/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="index.js"></script>
@@ -33,31 +34,27 @@
 
         </header>
         <section class="register_step">
-            <div class="register_container register_container4">
+            <div class="register_container card_payment">
                 <img src="./assets/padlock.png" alt="padlock">
                 <div class="passosrestantes">
-                    PASSO <span class="highlight">4</span> de <span class="highlight">5</span>
-
+                    PASSO <span class="highlight">5</span> de <span class="highlight">5</span>
                 </div>
+
                 <div class="title">
-                    Escolha a forma de pagamento que pretende utilizar
+                    Configure o seu cartão de crédito ou débito
                 </div>
-                <div class="explanation">
-                    O seu pagamento está encriptado. A forma de pagamento pode ser alterada quando quiser. <br>
-                    <strong>Uma forma de pagamento segura para a sua tranquilidade</strong>
+                <div class="possiblecards">
+                    <img src="assets/creditcards.png" alt="">
                 </div>
 
-                <button class="selected creditcard redirect_card">Número de cartão de crédito ou débito
-                    <img src="assets/creditcards.png" alt="visa">
-                </button>
-                <div class="alternatives">
-                    <img class="redirect_apple" src="assets/applepay.png" alt="visa">
-                    <img class="redirect_paypal" src="assets/paypal.png" alt="visa">
-                    <img class="redirect_google" src="assets/google_pay.png" alt="visa">
-                </div>
-                <button onclick="redirectFromPayment();" class="bigbutton">
-                    Seguinte
-                </button>
+                <form>
+                    <input type="text" placeholder="Número do cartão" name="cardnumber" id='cardnumber' required />
+                    <input type="date" placeholder="Data de validate" name="datavalidade" id='datavalidade' required />
+                    <input type="text" placeholder="CVV" name="cvv" id='cvv' required />
+                    <input type="text" placeholder="Nome próprio" name="nomeproprio" id='nomeproprio' required />
+                    <input type="text" placeholder="Apelido" name="apelido" id='apelido' required />
+                    <input type="submit" class="bigbutton" placeholder="Aderir">
+            </form>
 
             </div>
         </section>

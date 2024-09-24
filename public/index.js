@@ -1,19 +1,25 @@
 (async function main() {
     let text = await (await fetch('../pricing_tiers.csv')).text()
-    const result = buildResult(text)
+    if (text) {
+        const result = buildResult(text)
+        let slider = document.querySelector(".motoristas_slider")
+        if (slider) {
+            slider?.addEventListener('input', _ => {
+                updateValue(slider.value, result)
+            }, false);
 
-    let slider = document.querySelector(".motoristas_slider")
+            // initial update ensures prices start out consistent
+            updateValue(slider.value, result)
+        }
 
-    slider.addEventListener('input', _ => {
-        updateValue(slider.value, result)
-    }, false);
+    }
 
-    // initial update ensures prices start out consistent
-    updateValue(slider.value, result)
 
     setupFAQs()
 
     setupItemList()
+
+    setupPaymentButtons()
 })()
 
 const actionItems = [
@@ -54,7 +60,7 @@ const actionItems = [
         src: "assets/icon_chat.jpeg",
         title: "Comunicar diretamente com os seus motoristas",
         text: "Envie relatórios para os seus motoritsas de forma instantânea"
-    }]
+    }];
 
 function setupItemList() {
     for (const { src, title, text } of actionItems) {
@@ -62,6 +68,65 @@ function setupItemList() {
     }
 }
 
+function grabButtons() {
+    const images = document.querySelectorAll(".register_container4  .alternatives img");
+    const creditcard_button = document.querySelector(".register_container4 .creditcard");
+    const buttons = [creditcard_button, ...images]
+    return buttons;
+}
+
+function setupPaymentButtons() {
+    const buttons = grabButtons();
+    for (const b of buttons) {
+        b.addEventListener("click", _ => {
+            deselectPaymentButtons(buttons)
+            selectPaymentButton(b)
+        })
+    }
+}
+
+/**
+ * 
+ * @param {HTMLCollection} buttons 
+ */
+function deselectPaymentButtons(buttons) {
+    for (const button of buttons) {
+        button.classList.remove("selected");
+    }
+}
+
+/**
+ * 
+ * @param {Element} button 
+ */
+function selectPaymentButton(button) {
+    button.classList.add("selected");
+}
+
+
+function redirectFromPayment() {
+    const buttons = grabButtons();
+    // assumes at least one will be selected
+    let a = buttons.filter(b => b.classList.contains("selected"));
+
+    if (a[0]) {
+        switch ([...a[0].classList].filter(c => c.includes("redirect"))[0].split("_")[1]) {
+            case "paypal":
+                alert("pagar com paypal")
+                break;
+            case "google":
+                alert("pagar com google")
+                break;
+            case "apple":
+                alert("pagar com apple")
+                break;
+            case "card":
+                window.location.href = "card_payment.html"
+                break;
+
+        }
+    }
+}
 // <div class="actionitem">
 //     <img src="assets/icon_calculator.jpeg" alt="calculator item">
 //     <div class="actioniteminfo">
