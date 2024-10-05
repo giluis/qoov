@@ -74,20 +74,16 @@ const actionItems = [
 
 (async function main() {
     // let text = await (await fetch('./pricing_tiers.csv')).text()
-    // let text = pricing_tiers;
-    // if (text) {
-        // const result = buildResult(text)
-        let slider = document.querySelector(".motoristas_slider")
-        if (slider) {
-            slider?.addEventListener('input', _ => {
-                updateValue(slider.value, pricing_tiers)
-            }, false);
-
-            // initial update ensures prices start out consistent
+    let slider = document.querySelector(".motoristas_slider")
+    if (slider) {
+        slider?.addEventListener('input', _ => {
             updateValue(slider.value, pricing_tiers)
-        }
+        }, false);
 
-    // }
+        // initial update ensures prices start out consistent
+        updateValue(slider.value, pricing_tiers)
+    }
+
 
 
     setupFAQs()
@@ -205,17 +201,17 @@ function createItem(imgsrc, inputTitle, inputText) {
 }
 
 function setupFAQs() {
-    for (const e of document.querySelectorAll(".question_container")) {
+    for (const e of document.querySelectorAll(".question_item")) {
         e.addEventListener("click", _ => {
             collapseFAQs()
-            e.classList.add("selected")
+            e.classList.add("active")
         })
     }
 }
 
 function collapseFAQs() {
-    for (const e of document.querySelectorAll(".question_container")) {
-        e.classList.remove("selected")
+    for (const e of document.querySelectorAll(".question_item")) {
+        e.classList.remove("active")
     }
 }
 

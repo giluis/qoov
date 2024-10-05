@@ -1224,57 +1224,125 @@ section.ambiente .sectiontext {
   max-height: 200px;
 }
 
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
 #faqs {
   display: flex;
   flex-direction: column;
+  height: 80vh;
   align-items: center;
-  max-width: 580px;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 100px;
-  margin-top: 120px;
+  margin-top: 490px;
+  background-color: #020526;
 }
 
-.question_container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.faqs_container {
+  position: relative;
+  bottom: 300px;
 }
-
-.question_item {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 10px;
+.faqs_container .sectiontitle {
+  text-align: center;
+  margin-bottom: 100px;
 }
-.question_item .title {
-  background-color: #f4f4f4;
-  padding: 10px 20px;
-  cursor: pointer;
+.faqs_container .question_container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-.question_item .title h3 {
+.faqs_container .question_container .question_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 200px;
+  height: 120px;
+  margin: 0 10px;
+  text-align: center;
+  padding: 5px 10px;
+  transition: height 0.3s ease-in-out, min-height 0.3s ease-in;
+}
+.faqs_container .question_container .question_item img {
+  display: none;
+}
+.faqs_container .question_container .question_item .title {
+  font-family: "SF Pro Text Semibold";
   margin: 0;
+  font-size: 1.1em;
+  color: #DA207a;
+  cursor: pointer;
 }
-.question_item .title .arrow {
-  font-size: 20px;
-  transition: transform 0.5s ease;
-  color: #DA2077;
-}
-.question_item .answer {
-  padding: 0 20px;
-  max-height: 0;
+.faqs_container .question_container .question_item .answer {
+  display: none;
   overflow: hidden;
+  max-height: 0;
   transition: max-height 0.5s ease-out;
 }
-
-.question_item.open .answer {
-  max-height: 1000px;
-  transition: max-height 0.5s ease-in;
+.faqs_container .question_container .question_item.active {
+  max-width: 300px;
+  min-height: fit-content;
+  max-height: 300px;
+  padding: 25px;
 }
-
-.question_item.open .arrow {
-  transform: rotate(180deg);
+.faqs_container .question_container .question_item.active .title {
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.faqs_container .question_container .question_item.active img {
+  display: block;
+  max-width: 90px;
+  max-height: 90px;
+}
+.faqs_container .question_container .question_item.active .answer {
+  display: block;
+  padding: 0 5px;
+  color: #3d3d3d;
+  font-family: "SF Pro Text Light";
+  max-height: 200px;
 }
 
 @font-face {

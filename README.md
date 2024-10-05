@@ -1,6 +1,7 @@
 # Questões:
 - Todas as plataformas / todas as suas plataformas?
 - Nome próprio *E* apelido (card_payment.html)
+- FAQ o que é a Qoov plataforma repetida
 
 
 # TODO:
