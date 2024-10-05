@@ -83,12 +83,14 @@ main {
 #landing .email_and_submit {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 80%;
   margin-top: 40px;
+  height: 80px;
 }
 #landing .email_and_submit input {
   background-color: rgba(221, 33, 121, 0.7254901961);
-  width: 43%;
+  width: 33%;
   max-width: 400px;
   height: 32px;
   border-radius: 18px;
@@ -96,8 +98,8 @@ main {
   font-size: 0.8em;
   border: none;
   color: #dddddd;
-  margin: auto 0px;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-bottom: 18px;
 }
 #landing .email_and_submit input::placeholder {
   color: white;
@@ -107,6 +109,7 @@ main {
 #landing .email_and_submit .bigbutton {
   padding: 12px 25px;
   font-size: 1.1em;
+  margin-bottom: 0;
   width: 105px;
 }
 #landing .email_and_submit .bigbutton span {
@@ -836,15 +839,12 @@ section.company_stats footer {
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 830px;
+  width: 100%;
   height: 490px;
   border-radius: 20px;
-  z-index: 1;
-  bottom: -370px;
-  left: calc(50vw - 415px);
 }
 
-.mainopinion {
+.opinion {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1fr 2fr 1fr;
@@ -852,14 +852,11 @@ section.company_stats footer {
   height: 380px;
   border-radius: 20px;
   background-color: white;
-  z-index: 10;
   color: black;
-  bottom: -320px;
-  left: calc(50vw - 260px);
   padding: 15px 60px 20px 60px;
   box-shadow: 0 3px 6px #ccc;
 }
-.mainopinion h1 {
+.opinion h1 {
   align-self: left;
   text-align: left;
   font-family: "SF Pro Text Semibold";
@@ -867,18 +864,18 @@ section.company_stats footer {
   font-weight: 600;
   letter-spacing: -1px;
 }
-.mainopinion p {
+.opinion p {
   font-size: 1.4rem;
   text-align: left;
   font-family: "SF Pro Display Regular";
   margin: auto 0;
 }
-.mainopinion .opinionauthor {
+.opinion .opinionauthor {
   display: flex;
   height: 60px;
   align-items: center;
 }
-.mainopinion .opinionauthor .profile_pic {
+.opinion .opinionauthor .profile_pic {
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -889,34 +886,19 @@ section.company_stats footer {
   font-weight: 600;
   font-size: 0.9em;
 }
-.mainopinion .opinionauthor .author_container {
+.opinion .opinionauthor .author_container {
   margin-left: 15px;
 }
-.mainopinion .opinionauthor .author_container .author_name {
+.opinion .opinionauthor .author_container .author_name {
   text-align: left;
 }
-.mainopinion .opinionauthor .author_container .author_role {
+.opinion .opinionauthor .author_container .author_role {
   text-align: left;
   font-size: smaller;
 }
-
-.background_opinion {
-  position: absolute;
-  display: flex;
-  width: 330px;
-  height: 290px;
-  z-index: 9;
-  top: 48px;
-  border-radius: 20px;
-  padding: 20px 60px;
-  background-color: white;
-  box-shadow: 0 3px 6px #ccc;
-}
-.background_opinion.right_opinion {
-  left: calc(50vw - 260px - 20px);
-}
-.background_opinion.left_opinion {
-  right: calc(50vw - 260px - 20px);
+.opinion[data-pos="-1"] .opinionauthor .profile_pic, .opinion[data-pos="1"] .opinionauthor .profile_pic {
+  border: 1px solid beige;
+  transition: border 0.3s ease-in;
 }
 
 @font-face {
@@ -1158,6 +1140,31 @@ section.company_stats footer {
   font-weight: 300;
   font-size: 16px;
   margin-top: -10px;
+}
+
+[data-over30=over].desconto {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+[data-over30=over].desconto .plano {
+  margin-top: 30px;
+}
+[data-over30=over].desconto .subtitle {
+  margin-top: 20px;
+  font-family: "SF Pro Text Light";
+  font-size: 1.2em;
+  text-align: center;
+}
+[data-over30=over].desconto .bigbutton {
+  margin: 0;
+  margin-top: 25px;
+  font-size: 0.7em;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1em;
+  padding: 0;
+  height: 40px;
 }
 
 section.ambiente {

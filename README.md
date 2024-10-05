@@ -4,33 +4,36 @@
 
 
 # TODO:
-- [ ] letra maior no quadradinho dos descontos
-- [ ] adicionar animação de expo devices
-- [ ] ajustar FAQs
-- [ ] logo da QOOV na tab 
+- [ ] Letra maior no quadradinho dos descontos
+- [ ] Adicionar animação de expo devices
+- [ ] Ajustar FAQs
+- [ ] Logo da QOOV na tab 
 - [ ] Inputs the cartão de crédito
 - [ ] Apple pay, google pay, paypal integration
 - [ ] Form validation
 - [ ] Add Qoov logo to header 
 - [ ] Tamanhos e inconsistências no register flow
+- [ ] Load more opinions dynamically
+- [ ] Formulário de contacto
+- [X] Opinion carousel
 - [X] Stats adjust variable size
 - [X] px to rem / em (partially done)
-- [X] adicionar texto às FAQs que faltam 
-- [X] ajustar espaçamento nas FAQs
-- [X] animações nas FAQs 
-- [X] animações nos botões
-- [X] ajustar tamanho promoção
-- [X] acertar nos tipos de letra
-    - Alguns tipos de letra são "impossíveis" de acertar 
-- [X] border na bolinha dos stats
-- [X] aumentar precisão do slider
-- [X] ajustar tamanho promoção 
-- [X] diminuir subtítulo "Agrupe ..."
-- [X] tamanho de título de itens deve ser semelhante ao texto  
-- [X] diminuir sombras
-- [X] ajustar tamanho de botões
-- [X] ajustar tamanho de pricing discount
-- [X] separar csv em módulos
+- [X] Adicionar texto às FAQs que faltam 
+- [X] Ajustar espaçamento nas FAQs
+- [X] Animações nas FAQs 
+- [X] Animações nos botões
+- [X] Ajustar tamanho promoção
+- [X] Acertar nos tipos de letra
+    - Alguns tipos de letra são praticamente impossíveis de acertar 
+- [X] Border na bolinha dos stats
+- [X] Aumentar precisão do slider
+- [X] Ajustar tamanho promoção 
+- [X] Diminuir subtítulo "Agrupe ..."
+- [X] Tamanho de título de itens deve ser semelhante ao texto  
+- [X] Diminuir sombras
+- [X] Ajustar tamanho de botões
+- [X] Ajustar tamanho de pricing discount
+- [X] Separar csv em módulos
 
 # Design que falta
 - [ ] Mudar de idioma

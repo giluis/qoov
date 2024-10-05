@@ -239,4 +239,29 @@
   margin-top: -10px;
 }
 
+[data-over30=over].desconto {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+[data-over30=over].desconto .plano {
+  margin-top: 30px;
+}
+[data-over30=over].desconto .subtitle {
+  margin-top: 20px;
+  font-family: "SF Pro Text Light";
+  font-size: 1.2em;
+  text-align: center;
+}
+[data-over30=over].desconto .bigbutton {
+  margin: 0;
+  margin-top: 25px;
+  font-size: 0.7em;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1em;
+  padding: 0;
+  height: 40px;
+}
+
 /*# sourceMappingURL=pricing.css.map */

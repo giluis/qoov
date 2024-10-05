@@ -1,0 +1,43 @@
+.carousel {
+  display: flex;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    // perspective: 300px;
+  }
+
+  &__item {
+    position: absolute;
+    transition: border .3s ease-in-out, filter .3s ease-in, transform .3s ease-in-out, z-index .3s ease-in, color .3s ease-in;
+
+    &[data-pos="0"] {
+      z-index: 5;
+    }
+
+    &[data-pos="-1"],
+    &[data-pos="1"] {
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
+      // opacity: 0.7;
+      color: #eee;
+      // transition: color .3s ea2e-in;
+      filter: blur(1px) grayscale(80%);
+      // text-shadow: 4px 4px 6px gray;
+      z-index: 4;
+    }
+
+    &[data-pos="-1"] {
+      transform: translateX(-25%) scale(.9);
+    }
+
+    &[data-pos="1"] {
+      transform: translateX(25%) scale(.9);
+    }
+  }
+}

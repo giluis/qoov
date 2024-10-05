@@ -7,12 +7,14 @@
     <title>Qoov</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
     <link rel="stylesheet" href="./public/styles/build/styles.css">
+    <link rel="stylesheet" href="./public/styles/build/carroussel.css">
     <!-- <link rel="stylesheet" href="./signin.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="public/index.js" defer></script>
+    <script src="public/carousel.js" defer></script>
 </head>
 
 <body>
@@ -119,25 +121,59 @@
         <footer>
             Powered by Qoov
         </footer>
-        <div class="opinions">
-            <div class="mainopinion">
-                <h1 class="opiniontitle">Empresa XPTO</h1>
-                <p class="opiniontext">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
-                    laoreet sit amet cursus..”
-                </p>
-                <div class="opinionauthor">
-                    <div class="profile_pic">FM</div>
-                    <div class="author_container">
-                        <div class="author_name">Francisco Martins</div>
-                        <div class="author_role">Diretor Geral</div>
+        <div class="carousel" >
+            <ul class="opinions carousel__list" data-offset="0">
+                <li class="opinion carousel__item" data-pos="-1">
+                    <h1 class="opiniontitle">Empresa XPTO</h1>
+                    <p class="opiniontext">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
+                        laoreet sit amet cursus..”
+                    </p>
+                    <div class="opinionauthor">
+                        <div class="profile_pic">FM</div>
+                        <div class="author_container">
+                            <div class="author_name">Francisco Martins</div>
+                            <div class="author_role">Diretor Geral</div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="background_opinion left_opinion"></div>
-            <div class="background_opinion right_opinion"></div>
+                </li>
+                <li class="opinion carousel__item" data-pos="0">
+                    <h1 class="opiniontitle">Empresa XPTO</h1>
+                    <p class="opiniontext">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
+                        laoreet sit amet cursus..”
+                    </p>
+                    <div class="opinionauthor">
+                        <div class="profile_pic">FM</div>
+                        <div class="author_container">
+                            <div class="author_name">Francisco Martins</div>
+                            <div class="author_role">Diretor Geral</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="opinion carousel__item" data-pos="1">
+                    <h1 class="opiniontitle">Empresa XPTO</h1>
+                    <p class="opiniontext">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Volutpat sed cras ornare arcu. Consequat semper viverra nam libero justo
+                        laoreet sit amet cursus..”
+                    </p>
+                    <div class="opinionauthor">
+                        <div class="profile_pic">FM</div>
+                        <div class="author_container">
+                            <div class="author_name">Francisco Martins</div>
+                            <div class="author_role">Diretor Geral</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
+
     </section>
 
 
@@ -160,10 +196,11 @@
 
             <div class="slider_and_show">
                 <div class="slider_container sectiontext">
-                    <p>Quanto maior a frota, maior a poupança. <br>Quantos <span class="highlight_brand">motoristas</span>
+                    <p>Quanto maior a frota, maior a poupança. <br>Quantos <span
+                            class="highlight_brand">motoristas</span>
                         tem a sua frota?</p>
                     <!-- Value 212 is computed based on the mapping of [1:1000] -> [1:30] -->
-                    <input min=1 max=1000 type="range" value=212 name="num_motoristas" class="motoristas_slider">
+                    <input min=1 max=1000 type="range" value=192 name="num_motoristas" class="motoristas_slider">
                     <div class="labels">
                         <div><strong>1</strong> motorista</div>
                         <div><strong>+30</strong> motoristas</div>
@@ -171,15 +208,15 @@
 
                 </div>
                 <div class="slider_calculation">
-                    <div class="desconto">
-                        <div class="discount">-8%</div>
+                    <div class="desconto" data-over30="under">
+                        <!-- <div class="discount">-8%</div>
                         <div class="plano">O seu plano</div>
                         <div class="diferencaPrecos">
                             <div class="precoBase">12€</div>
                             <div class="previous_price">12€</div>
                         </div>
                         <div class="pormotorista">por motorista</div>
-                        <div class="mensalmente">cobrado mensalmente</div>
+                        <div class="mensalmente">cobrado mensalmente</div> -->
                         <div class="num_motoristas_container">
                             <div class="num_motoristas_display">7</div>
                             <div>motoristas</div>

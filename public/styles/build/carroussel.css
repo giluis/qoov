@@ -1,0 +1,34 @@
+.carousel {
+  display: flex;
+}
+.carousel__list {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+.carousel__item {
+  position: absolute;
+  transition: border 0.3s ease-in-out, filter 0.3s ease-in, transform 0.3s ease-in-out, z-index 0.3s ease-in, color 0.3s ease-in;
+}
+.carousel__item[data-pos="0"] {
+  z-index: 5;
+}
+.carousel__item[data-pos="-1"], .carousel__item[data-pos="1"] {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
+  color: #eee;
+  filter: blur(1px) grayscale(80%);
+  z-index: 4;
+}
+.carousel__item[data-pos="-1"] {
+  transform: translateX(-25%) scale(0.9);
+}
+.carousel__item[data-pos="1"] {
+  transform: translateX(25%) scale(0.9);
+}
+
+/*# sourceMappingURL=carroussel.css.map */
